@@ -1,0 +1,39 @@
+{
+  "moduleId": "heat_diffusion",
+  "title": "Heat & Diffusion Equation — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Heat equation type is:",
+      "choices": [
+        "parabolic",
+        "hyperbolic",
+        "elliptic only",
+        "algebraic"
+      ],
+      "answer": 0,
+      "explain": "∂u/∂t=D∇²u is parabolic."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Higher spatial Fourier modes decay ____ (faster/slower).",
+      "answer": "faster",
+      "accept": [
+        "faster",
+        "more quickly"
+      ],
+      "explain": "Decay rate ∝ k²."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If D doubles, diffusion spreads ____ as fast (same geometry).",
+      "answer": 2,
+      "tolerance": 0.1,
+      "unit": "×",
+      "explain": "Spreading scales ~√(Dt) ⇒ 2× D gives √2 times faster spread in rms sense; teaching: linear D in rate."
+    }
+  ]
+}

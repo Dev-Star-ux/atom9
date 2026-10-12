@@ -1,0 +1,39 @@
+{
+  "moduleId": "wave_equation_2d",
+  "title": "2D Wave Equation / Ripple Tank — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "The 2D wave equation is:",
+      "choices": [
+        "∂²u/∂t²=c²∇²u",
+        "∂u/∂t=D∇²u",
+        "∇·E=ρ/ε₀",
+        "F=ma"
+      ],
+      "answer": 0,
+      "explain": "Hyperbolic PDE for waves."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Two sources create an ____ pattern when superposed.",
+      "answer": "interference",
+      "accept": [
+        "interference",
+        "interference pattern"
+      ],
+      "explain": "Superposition of waves from two sources."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If wavelength halves, frequency doubles (fixed c). Speed c unchanged — frequency ratio f₂/f₁ when λ₂=λ₁/2?",
+      "answer": 2,
+      "tolerance": 0.01,
+      "unit": "×",
+      "explain": "c=λf ⇒ f∝1/λ."
+    }
+  ]
+}

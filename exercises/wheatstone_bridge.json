@@ -1,0 +1,53 @@
+{
+  "moduleId": "wheatstone_bridge",
+  "title": "Wheatstone Bridge — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "A Wheatstone bridge (R1, R2 top arms; R3, Rx bottom arms) is balanced when:",
+      "choices": [
+        "R1·Rx = R2·R3",
+        "R1 + Rx = R2 + R3",
+        "R1·R2 = R3·Rx",
+        "R1/Rx = R3 + R2"
+      ],
+      "answer": 0,
+      "explain": "Balance requires the two voltage-divider ratios to match: R3/(R1+R3) = Rx/(R2+Rx), which simplifies to R1·Rx = R2·R3."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "At balance, the current through the galvanometer is ____.",
+      "answer": "zero",
+      "accept": [
+        "zero",
+        "0",
+        "none"
+      ],
+      "explain": "Balance is defined as the null condition: no potential difference between the bridge's two middle nodes, so no current flows through the galvanometer."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "Why is the Wheatstone bridge method considered precise and self-calibrating for measuring an unknown resistance?",
+      "choices": [
+        "Balance is a null (zero-current) condition, so the result does not depend on knowing the battery voltage or galvanometer sensitivity precisely",
+        "It requires a very accurate voltmeter to read Vg",
+        "It only works for one specific resistance value",
+        "The battery voltage must be measured to high precision"
+      ],
+      "answer": 0,
+      "explain": "Because you only need to detect zero current (a null), the method is insensitive to battery voltage drift or galvanometer calibration — only the ratio of the known resistors matters at balance."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "If R1 = 100 Ω, R2 = 200 Ω, and R3 = 150 Ω, what value of Rx balances the bridge (in Ω)?",
+      "answer": 300,
+      "tolerance": 5,
+      "unit": "Ω",
+      "explain": "Rx = R2·R3 / R1 = (200 × 150) / 100 = 300 Ω."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "moduleId": "spectral_density",
+  "title": "Spectral Energy Density — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Blackbody spectral radiance depends strongly on:",
+      "choices": [
+        "temperature T",
+        "only volume",
+        "only magnetic field",
+        "nuclear spin only"
+      ],
+      "answer": 0,
+      "explain": "Planck / Wien / Stefan–Boltzmann all involve T."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "The peak wavelength of a blackbody shifts with T according to Wien’s ____ law.",
+      "answer": "displacement",
+      "accept": [
+        "displacement",
+        "wien",
+        "Wien's"
+      ],
+      "explain": "λ_max T = constant."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If λ_max T = 2.9×10⁻³ m·K and T = 2900 K, λ_max in μm is approximately?",
+      "answer": 1,
+      "tolerance": 0.05,
+      "unit": "μm",
+      "explain": "λ = 2.9e-3/2900 = 1×10⁻⁶ m = 1 μm."
+    }
+  ]
+}

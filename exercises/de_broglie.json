@@ -1,0 +1,40 @@
+{
+  "moduleId": "de_broglie",
+  "title": "de Broglie Matter Waves — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "de Broglie wavelength is λ =",
+      "choices": [
+        "h/p",
+        "hf",
+        "2d sin θ",
+        "e/m"
+      ],
+      "answer": 0,
+      "explain": "λ = h/p = h/(mv) non-relativistically."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Faster particles have ____ de Broglie wavelengths.",
+      "answer": "shorter",
+      "accept": [
+        "shorter",
+        "smaller",
+        "less"
+      ],
+      "explain": "λ ∝ 1/p."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If momentum doubles, λ becomes what factor of the original?",
+      "answer": 0.5,
+      "tolerance": 0.01,
+      "unit": "×",
+      "explain": "λ ∝ 1/p."
+    }
+  ]
+}

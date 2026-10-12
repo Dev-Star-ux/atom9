@@ -1,0 +1,40 @@
+{
+  "moduleId": "esr_epr",
+  "title": "ESR / EPR — Electron Spin Resonance — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "EPR resonance condition (isotropic) is:",
+      "choices": [
+        "hν = gμ_BB",
+        "hf = φ",
+        "E = mc²",
+        "λ = h/p only"
+      ],
+      "answer": 0,
+      "explain": "Microwave quantum matches Zeeman splitting."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Hyperfine coupling splits EPR lines by spacing A in units of ____.",
+      "answer": "mT",
+      "accept": [
+        "mT",
+        "millitesla",
+        "gauss"
+      ],
+      "explain": "Teaching model uses mT for field splitting."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "One equivalent I=½ nucleus gives how many hyperfine lines?",
+      "answer": 2,
+      "tolerance": 0,
+      "unit": "",
+      "explain": "2^n lines with n equivalent I=½ nuclei; n=1 ⇒ 2 lines."
+    }
+  ]
+}

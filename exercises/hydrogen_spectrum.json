@@ -1,0 +1,39 @@
+{
+  "moduleId": "hydrogen_spectrum",
+  "title": "Hydrogen Atomic Spectrum — Rydberg Formula — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Hydrogen emission lines come from electrons:",
+      "choices": [
+        "jumping between levels",
+        "orbiting with any energy",
+        "annihilating protons",
+        "only vibrating molecules"
+      ],
+      "answer": 0,
+      "explain": "ΔE = hf for transitions."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "The Balmer series involves transitions ending at n = ____.",
+      "answer": "2",
+      "accept": [
+        "2",
+        "n=2"
+      ],
+      "explain": "Balmer: n→2."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If E₂ = −3.4 eV and E₃ = −1.51 eV, photon energy |ΔE| in eV ≈?",
+      "answer": 1.89,
+      "tolerance": 0.05,
+      "unit": "eV",
+      "explain": "3.4 − 1.51 = 1.89 eV."
+    }
+  ]
+}

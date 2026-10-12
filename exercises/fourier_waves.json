@@ -1,0 +1,39 @@
+{
+  "moduleId": "fourier_waves",
+  "title": "Fourier Wave Synthesis — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Truncating a Fourier series at a jump causes overshoot called:",
+      "choices": [
+        "Gibbs phenomenon",
+        "Rayleigh scattering",
+        "Compton shift",
+        "Stark effect"
+      ],
+      "answer": 0,
+      "explain": "Ringing near discontinuities persists as N→∞."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "A square wave contains only ____ harmonics (odd/even).",
+      "answer": "odd",
+      "accept": [
+        "odd",
+        "odd only"
+      ],
+      "explain": "Square wave symmetry ⇒ sine terms with n=1,3,5…"
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If fundamental frequency is f, the 3rd harmonic frequency is?",
+      "answer": 3,
+      "tolerance": 0.01,
+      "unit": "×f",
+      "explain": "Third harmonic = 3f."
+    }
+  ]
+}

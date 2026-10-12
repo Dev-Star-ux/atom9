@@ -1,0 +1,54 @@
+{
+  "moduleId": "gm_dead_time",
+  "title": "GM Tube: Energy Response & Dead Time — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "In the Geiger region, pulse height vs γ energy is roughly:",
+      "choices": [
+        "the same for all energies (saturated)",
+        "strictly linear with E",
+        "zero always",
+        "proportional to 1/E"
+      ],
+      "answer": 0,
+      "explain": "Avalanche saturates — GM counts events, it does not measure energy."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Non-paralyzable: n = m / (1 + m ____).",
+      "answer": "τ",
+      "accept": [
+        "τ",
+        "tau",
+        "dead time",
+        "τ"
+      ],
+      "explain": "τ = dead time; observed rate n is less than true rate m."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If m = 10000 s⁻¹ and τ = 100 µs, n ≈ ? (non-paralyzable)",
+      "answer": 5000,
+      "tolerance": 50,
+      "unit": "s⁻¹",
+      "explain": "n = 10000/(1+10000·1e-4) = 10000/2 = 5000."
+    },
+    {
+      "id": "q4",
+      "type": "selection",
+      "prompt": "You should operate a GM tube:",
+      "choices": [
+        "on the flat Geiger plateau",
+        "in continuous discharge",
+        "below any gas ionization",
+        "only at 0 V"
+      ],
+      "answer": 0,
+      "explain": "Plateau: nearly constant rate vs HV — stable counting."
+    }
+  ]
+}

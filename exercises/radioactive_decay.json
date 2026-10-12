@@ -1,0 +1,40 @@
+{
+  "moduleId": "radioactive_decay",
+  "title": "Radioactive Decay Simulator — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "After two half-lives, remaining fraction (ideal) is about:",
+      "choices": [
+        "1/4",
+        "1/2",
+        "1/8",
+        "zero always"
+      ],
+      "answer": 0,
+      "explain": "1 → 1/2 → 1/4."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "N(t) = N₀ e^(−____ t).",
+      "answer": "λ",
+      "accept": [
+        "λ",
+        "lambda",
+        "Λ"
+      ],
+      "explain": "λ = decay constant; T½ = ln2/λ."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If T½ = 10 s, after 30 s fraction remaining?",
+      "answer": 0.125,
+      "tolerance": 0.01,
+      "unit": "",
+      "explain": "(1/2)³ = 0.125."
+    }
+  ]
+}

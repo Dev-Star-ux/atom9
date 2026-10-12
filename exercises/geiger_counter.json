@@ -1,0 +1,40 @@
+{
+  "moduleId": "geiger_counter",
+  "title": "Geiger Counter & Sources — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Doubling distance in open geometry (fixed source) typically reduces rate by about:",
+      "choices": [
+        "4× (inverse square)",
+        "2× only",
+        "no change",
+        "exactly 8× always"
+      ],
+      "answer": 0,
+      "explain": "Flux ∝ 1/r² → rate ∝ 1/r²."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Shielding reduces intensity as I = I₀ e^(−____ x).",
+      "answer": "μ",
+      "accept": [
+        "μ",
+        "mu",
+        "mu x"
+      ],
+      "explain": "μ = linear attenuation coefficient."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If rate is 400 cps at 1 m, at 2 m (same geometry) rate is about?",
+      "answer": 100,
+      "tolerance": 5,
+      "unit": "cps",
+      "explain": "400×(1/2)² = 100."
+    }
+  ]
+}

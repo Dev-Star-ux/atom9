@@ -1,0 +1,39 @@
+{
+  "moduleId": "wave_particle_probability",
+  "title": "Wave–Particle & Probability — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Born’s rule: probability density is related to:",
+      "choices": [
+        "|ψ|²",
+        "Re(ψ) only",
+        "arg(ψ) only",
+        "∇ψ only"
+      ],
+      "answer": 0,
+      "explain": "P(x) = |ψ(x)|²."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "The wavefunction ψ is a ____ amplitude.",
+      "answer": "probability",
+      "accept": [
+        "probability",
+        "complex probability"
+      ],
+      "explain": "Probability amplitude."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If |ψ| doubles everywhere in a normalized region (then renormalize later conceptually), |ψ|² becomes what factor before renorm?",
+      "answer": 4,
+      "tolerance": 0.01,
+      "unit": "×",
+      "explain": "|ψ|² → 4|ψ|²."
+    }
+  ]
+}

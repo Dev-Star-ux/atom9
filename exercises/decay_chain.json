@@ -1,0 +1,40 @@
+{
+  "moduleId": "decay_chain",
+  "title": "U-238 Decay Series — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "The U-238 series ends at stable:",
+      "choices": [
+        "²⁰⁶Pb",
+        "²³⁸U",
+        "²²²Rn forever",
+        "¹⁴C"
+      ],
+      "answer": 0,
+      "explain": "Chain terminates at lead-206 after many α and β steps."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "²²²Rn is a ____ — relevant to indoor air.",
+      "answer": "gas",
+      "accept": [
+        "gas",
+        "noble gas",
+        "radon gas"
+      ],
+      "explain": "Radon is a gaseous decay product that can accumulate."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If one step has T½ = 3.82 d, after 3.82 d what fraction of that isotope remains?",
+      "answer": 0.5,
+      "tolerance": 0.02,
+      "unit": "",
+      "explain": "One half-life → 50% remain."
+    }
+  ]
+}

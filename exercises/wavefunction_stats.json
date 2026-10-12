@@ -1,0 +1,39 @@
+{
+  "moduleId": "wavefunction_stats",
+  "title": "Wavefunction Statistics — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Expectation value ⟨x⟩ is the average of x weighted by:",
+      "choices": [
+        "|ψ|²",
+        "ψ alone",
+        "E only",
+        "random noise"
+      ],
+      "answer": 0,
+      "explain": "⟨x⟩ = ∫ x|ψ|² dx."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Variance of x relates to uncertainty Δx = √(⟨x²⟩ − ⟨x⟩____).",
+      "answer": "2",
+      "accept": [
+        "2",
+        "²"
+      ],
+      "explain": "Δx = √(⟨x²⟩ − ⟨x⟩²)."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If ⟨x⟩ = 0 and ⟨x²⟩ = 4, Δx is?",
+      "answer": 2,
+      "tolerance": 0.01,
+      "unit": "",
+      "explain": "√4 = 2."
+    }
+  ]
+}

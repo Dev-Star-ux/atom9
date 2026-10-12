@@ -1,0 +1,40 @@
+{
+  "moduleId": "schrodinger_discovery",
+  "title": "Time-Dependent Schrödinger Equation — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Schrödinger’s equation governs the evolution of:",
+      "choices": [
+        "the wavefunction ψ",
+        "only classical trajectories",
+        "nuclear binding always",
+        "temperature fields"
+      ],
+      "answer": 0,
+      "explain": "iħ ∂ψ/∂t = Ĥψ."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Stationary states have time factor e^(−iEt/____).",
+      "answer": "ħ",
+      "accept": [
+        "ħ",
+        "hbar",
+        "h-bar"
+      ],
+      "explain": "Phase E t / ħ."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "For a stationary state, |ψ|² is ____ in time (0 = changing, 1 = constant).",
+      "answer": 1,
+      "tolerance": 0,
+      "unit": "",
+      "explain": "Probability density is time-independent."
+    }
+  ]
+}

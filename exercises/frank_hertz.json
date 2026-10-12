@@ -1,0 +1,40 @@
+{
+  "moduleId": "frank_hertz",
+  "title": "Frank–Hertz — Quantized Excitation — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Franck–Hertz shows atomic energy levels are:",
+      "choices": [
+        "quantized",
+        "continuous only",
+        "classical orbits forever",
+        "unobservable"
+      ],
+      "answer": 0,
+      "explain": "Inelastic collisions at discrete voltages."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Current drops when electrons lose energy in ____ collisions with atoms.",
+      "answer": "inelastic",
+      "accept": [
+        "inelastic",
+        "exciting",
+        "excitation"
+      ],
+      "explain": "Excitation costs fixed ΔE."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If the first excitation is 4.9 eV, the voltage spacing between dips is about how many volts?",
+      "answer": 4.9,
+      "tolerance": 0.1,
+      "unit": "V",
+      "explain": "eΔV ≈ 4.9 eV ⇒ ΔV ≈ 4.9 V."
+    }
+  ]
+}

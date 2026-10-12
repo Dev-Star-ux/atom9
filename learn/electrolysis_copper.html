@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Copper Sulfate Electrolysis — Learn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    .learn-doc { padding: 8px 6px 28px; max-width: 700px; }
+    h1 {
+      font-size: 1.4rem;
+      margin: 0 0 10px;
+      color: #0f172a;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    h2 {
+      font-size: 0.95rem;
+      margin: 22px 0 8px;
+      color: #0369a1;
+      font-weight: 700;
+    }
+    p { margin: 0 0 10px; color: #475569; }
+    .formula {
+      margin: 10px 0 14px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+      border: 1px solid #bae6fd;
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.98rem;
+      color: #0c4a6e;
+      white-space: pre-wrap;
+    }
+    .step {
+      padding: 12px 14px;
+      margin: 8px 0;
+      border-left: 3px solid #22c55e;
+      background: #f8fafc;
+      border-radius: 0 12px 12px 0;
+      color: #334155;
+    }
+    .step strong { color: #0f172a; }
+    ul { margin: 6px 0 10px 18px; color: #475569; }
+    li { margin-bottom: 4px; }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <article class="learn-doc" data-module="electrolysis_copper">
+    <div class="tag">Experiment guide</div>
+    <h1>Copper Sulfate Electrolysis</h1>
+    <p>Electrorefining/electroplating cell: copper electrodes in CuSO₄ solution. Cu²⁺ deposits at the cathode; the copper anode dissolves to replenish the solution, so copper is transferred from anode to cathode while the bath concentration stays roughly constant.</p>
+
+    <h2>1. Principle</h2>
+    <div class="step"><strong>Idea.</strong> Passing a DC current through CuSO₄ solution between two copper electrodes drives two half-reactions: at the cathode, Cu²⁺ ions gain electrons and plate out as solid copper (Cu²⁺ + 2e⁻ → Cu); at the anode, copper metal is oxidized and dissolves into solution (Cu → Cu²⁺ + 2e⁻). Because the same amount of copper leaves the anode as deposits on the cathode, the CuSO₄ concentration in the bath stays essentially unchanged — this is the basis of copper electrorefining and electroplating.</div>
+
+    <h2>2. Key formulas</h2>
+    <div class="formula">n = \dfrac{Q}{zF} = \dfrac{It}{zF}\quad\cdot\quad m = \dfrac{I t M}{zF}</div>
+    <ul>
+      <li>n = moles of copper deposited, Q = charge (C), I = current (A), t = time (s).</li>
+      <li>z = 2 electrons transferred per Cu²⁺ ion, F = 96485 C/mol (Faraday constant).</li>
+      <li>m = mass deposited (g), M = 63.55 g/mol (molar mass of copper).</li>
+      <li>Ask which quantity you control in the simulator (I, t), and which you measure (mass deposited).</li>
+    </ul>
+
+    <h2>3. What to observe</h2>
+    <div class="step"><strong>In the sim.</strong> Blue Cu²⁺ ions drift from the anode toward the cathode. The reddish copper deposit layer on the cathode thickens with elapsed time while the anode very slightly thins as it dissolves. The bottom plot traces mass deposited vs time — a straight line, since Faraday's law says mass is directly proportional to charge (and hence to time at fixed current).</div>
+
+    <h2>4. Step-by-step reasoning</h2>
+    <div class="step"><strong>Step A.</strong> Start from the two half-reactions: reduction at the cathode, oxidation at the copper anode.</div>
+    <div class="step"><strong>Step B.</strong> Write the governing relation: <span class="formula" style="display:inline;padding:4px 8px;margin:0">m = \dfrac{I t M}{zF}</span></div>
+    <div class="step"><strong>Step C.</strong> Change current or time in the experiment and predict the sign and size of the change in deposited mass before you look.</div>
+    <div class="step"><strong>Step D.</strong> Note why the anode is made of copper (not an inert electrode) in this scheme: it keeps replenishing Cu²⁺ in solution, so the process can run indefinitely without depleting the bath — the essence of electrorefining/electroplating.</div>
+
+    <h2>5. Check your understanding</h2>
+    <p>Open <strong>Exercises</strong> in the top bar for selection, fill-in, and calculation problems on this topic.</p>
+  </article>
+</body>
+</html>

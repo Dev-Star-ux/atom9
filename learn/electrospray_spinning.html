@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Electrostatic Spraying and Spinning — Learn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    .learn-doc { padding: 8px 6px 28px; max-width: 700px; }
+    h1 {
+      font-size: 1.4rem;
+      margin: 0 0 10px;
+      color: #0f172a;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    h2 {
+      font-size: 0.95rem;
+      margin: 22px 0 8px;
+      color: #be185d;
+      font-weight: 700;
+    }
+    p { margin: 0 0 10px; color: #475569; }
+    .formula {
+      margin: 10px 0 14px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #fdf2f8, #fce7f3);
+      border: 1px solid #fbcfe8;
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.98rem;
+      color: #9d174d;
+      white-space: pre-wrap;
+    }
+    .step {
+      padding: 12px 14px;
+      margin: 8px 0;
+      border-left: 3px solid #f472b6;
+      background: #f8fafc;
+      border-radius: 0 12px 12px 0;
+      color: #334155;
+    }
+    .step strong { color: #0f172a; }
+    ul { margin: 6px 0 10px 18px; color: #475569; }
+    li { margin-bottom: 4px; }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #be185d;
+      background: #fce7f3;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <article class="learn-doc" data-module="electrospray_spinning">
+    <div class="tag">Experiment guide</div>
+    <h1>Electrostatic Spraying and Spinning</h1>
+    <p>A liquid fed through a nozzle held at high voltage relative to a grounded collector deforms into a Taylor cone above an onset voltage; low-viscosity liquids break into a self-dispersing charged spray, high-viscosity liquids whip into a continuous nanofiber.</p>
+
+    <h2>1. Principle</h2>
+    <div class="step"><strong>Idea.</strong> As the voltage on the nozzle rises, the electric field pulls the liquid meniscus into a cone (the Taylor cone). Above the onset voltage a thin jet is drawn from the cone tip. What happens to that jet depends on the liquid's viscosity: a low-viscosity liquid (paints, coatings) cannot sustain a continuous thread — the jet breaks into fine charged droplets that then repel each other by Coulomb repulsion, spreading into a self-dispersing, more uniform spray cone (electrospray). A high-viscosity liquid (a polymer solution) resists breaking up; instead the jet undergoes a bending/whipping instability that stretches and thins it into a long continuous nanofiber, collected as a nonwoven fiber mat (electrospinning).</div>
+
+    <h2>2. Key formulas</h2>
+    <div class="formula">q_R = 8\pi\sqrt{\varepsilon_0 \gamma R^3}</div>
+    <ul>
+      <li>q_R: maximum (Rayleigh limit) charge a droplet of radius R can hold before Coulomb repulsion overcomes surface tension and the droplet fissions, C.</li>
+      <li>ε₀: vacuum permittivity, 8.854×10⁻¹² F/m. γ: surface tension, N/m. R: droplet radius, m.</li>
+      <li>The onset voltage in the simulator is a simplified teaching estimate (not a precise Taylor-cone formula) that increases with surface tension and nozzle size and increases slowly (logarithmically) with nozzle-to-collector distance.</li>
+    </ul>
+
+    <h2>3. What to observe</h2>
+    <div class="step"><strong>In the sim.</strong> Below onset voltage the nozzle just drips. Above onset with a low-viscosity liquid, watch fine droplets fan outward as they fall — mutual Coulomb repulsion pushes them apart, giving a more uniform spray than an uncharged nozzle. Switch to a high-viscosity liquid and the same jet instead winds into a whipping, zig-zagging thread that lands as a tangled fiber mat. The bottom plot shows the Rayleigh charge limit q_R rising with droplet radius R — a droplet must fission (split) once its charge would exceed this curve.</div>
+
+    <h2>4. Applications</h2>
+    <div class="step"><strong>Electrospray.</strong> Fine, self-dispersing coatings and paint sprays, crop spraying, and inkjet-like fine liquid dispersion — charged droplets repel each other in flight, giving more even coverage than an uncharged spray.</div>
+    <div class="step"><strong>Electrospinning.</strong> Continuous polymer nanofibers a few tens to hundreds of nanometers thick, used for air/water filtration media, tissue-engineering scaffolds, and protective textiles.</div>
+
+    <h2>5. Step-by-step reasoning</h2>
+    <div class="step"><strong>Step A.</strong> Start from the physical picture: a charged liquid meniscus balancing electric stress against surface tension.</div>
+    <div class="step"><strong>Step B.</strong> Write the governing relation: <span class="formula" style="display:inline;padding:4px 8px;margin:0">q_R = 8\pi\sqrt{\varepsilon_0 \gamma R^3}</span></div>
+    <div class="step"><strong>Step C.</strong> Change one control at a time (voltage, viscosity mode, surface tension) in the experiment and predict the sign of the change before you look.</div>
+    <div class="step"><strong>Step D.</strong> When an AI panel is present, collect data and compare the learned constant with the accepted value.</div>
+
+    <h2>6. Check your understanding</h2>
+    <p>Open <strong>Exercises</strong> in the top bar for selection, fill-in, and calculation problems on this topic.</p>
+  </article>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{
+  "moduleId": "spark_discharge",
+  "title": "Spark Discharge — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "What distinguishes a spark from a glow or arc discharge?",
+      "choices": [
+        "A spark is a transient breakdown, not self-sustained, while glow and arc discharges are steady, self-sustained conduction",
+        "A spark uses AC power while glow/arc discharges only use DC",
+        "A spark only happens in vacuum, glow/arc only happen in air",
+        "There is no real difference, only naming convention"
+      ],
+      "answer": 0,
+      "explain": "A spark is a brief, transient breakdown event that self-extinguishes once the capacitor/charge source discharges; glow and arc discharges are continuously sustained by the circuit."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "In the RC relaxation-oscillator model, if V_supply is less than or equal to V_b, the gap ____.",
+      "answer": "never fires",
+      "accept": [
+        "never fires",
+        "never sparks",
+        "does not spark",
+        "never breaks down"
+      ],
+      "explain": "t = R·C·ln[V_supply/(V_supply−V_b)] is only valid (finite and positive) when V_supply > V_b; otherwise the capacitor voltage asymptotically approaches V_supply without ever reaching breakdown."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "If you increase R or C (with V_supply and V_b fixed), what happens to the spark frequency?",
+      "choices": [
+        "It decreases — charging takes longer, so sparks occur less often",
+        "It increases — charging takes longer, so sparks occur more often",
+        "It stays exactly the same",
+        "It becomes infinite"
+      ],
+      "answer": 0,
+      "explain": "Charge time t = R·C·ln[V_supply/(V_supply−V_b)] grows with both R and C, and frequency f = 1/t, so a longer charge time means a lower spark frequency."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "R = 1 MΩ, C = 10 nF, V_supply = 600 V, V_b = 300 V. Find the charge time to breakdown t = R·C·ln[V_supply/(V_supply−V_b)] in ms.",
+      "answer": 6.93,
+      "tolerance": 0.1,
+      "unit": "ms",
+      "explain": "t = (1e6)(10e-9)·ln(600/300) = (1e-2)·ln(2) ≈ 0.01·0.693 = 0.00693 s = 6.93 ms. (Note: R·C = 1e-2 s, so t ≈ 6.93 ms.)"
+    }
+  ]
+}

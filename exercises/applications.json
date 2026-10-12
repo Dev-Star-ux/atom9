@@ -1,0 +1,40 @@
+{
+  "moduleId": "applications",
+  "title": "Applications of the Photoelectric Effect — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "A practical use of the photoelectric effect is:",
+      "choices": [
+        "light sensors / photodiodes",
+        "nuclear fission reactors",
+        "only CRT magnetic focusing",
+        "measuring g"
+      ],
+      "answer": 0,
+      "explain": "Photocells and detectors rely on photoemission / photoconduction."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Solar cells convert light into ____ energy.",
+      "answer": "electrical",
+      "accept": [
+        "electrical",
+        "electric",
+        "electricity"
+      ],
+      "explain": "Photovoltaic conversion."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If each photon frees at most one electron, 100 photons free at most how many electrons?",
+      "answer": 100,
+      "tolerance": 0,
+      "unit": "",
+      "explain": "One-to-one in the ideal Einstein picture."
+    }
+  ]
+}

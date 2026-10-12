@@ -1,0 +1,40 @@
+{
+  "moduleId": "double_slit",
+  "title": "Double-Slit Interference — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Electrons in a double-slit build an interference pattern, showing:",
+      "choices": [
+        "wave behaviour of matter",
+        "only particle hits with no wave",
+        "gravity waves",
+        "nuclear fission"
+      ],
+      "answer": 0,
+      "explain": "Matter-wave interference."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Which-path information destroys the ____ pattern.",
+      "answer": "interference",
+      "accept": [
+        "interference",
+        "fringe",
+        "fringes"
+      ],
+      "explain": "Complementarity."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If slit separation doubles, fringe angular spacing roughly becomes what factor?",
+      "answer": 0.5,
+      "tolerance": 0.01,
+      "unit": "×",
+      "explain": "θ ∝ λ/d."
+    }
+  ]
+}

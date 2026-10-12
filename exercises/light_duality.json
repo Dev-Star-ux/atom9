@@ -1,0 +1,39 @@
+{
+  "moduleId": "light_duality",
+  "title": "Wave–Particle Duality of Light — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Wave–particle duality means light can show:",
+      "choices": [
+        "both interference and photoelectric hits",
+        "only waves",
+        "only particles",
+        "neither"
+      ],
+      "answer": 0,
+      "explain": "Interference vs photon detection."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Young’s double slit demonstrates the ____ nature of light.",
+      "answer": "wave",
+      "accept": [
+        "wave",
+        "waves"
+      ],
+      "explain": "Interference fringes."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If fringe spacing doubles when slit separation halves (small-angle), spacing becomes what factor?",
+      "answer": 2,
+      "tolerance": 0.01,
+      "unit": "×",
+      "explain": "Δy ∝ 1/d."
+    }
+  ]
+}

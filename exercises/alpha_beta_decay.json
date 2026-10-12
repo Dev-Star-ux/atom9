@@ -1,0 +1,45 @@
+{
+  "moduleId": "alpha_beta_decay",
+  "title": "Alpha & Beta Decay Schemes — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Beta decay spectra are continuous because:",
+      "choices": [
+        "energy is shared with a neutrino",
+        "alpha mass is wrong",
+        "gamma has no energy",
+        "half-life is zero"
+      ],
+      "answer": 0,
+      "explain": "Neutrino carries variable energy → electron energy spectrum is continuous."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Alpha decay emits a ____ nucleus.",
+      "answer": "helium",
+      "accept": [
+        "helium",
+        "He",
+        "⁴He",
+        "alpha"
+      ],
+      "explain": "α particle = ²He⁴ nucleus."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "In alpha decay, the daughter nucleus:",
+      "choices": [
+        "recoils and shares energy with the alpha",
+        "never moves",
+        "becomes a neutrino",
+        "gains two protons always"
+      ],
+      "answer": 0,
+      "explain": "Momentum conservation: daughter recoils; alpha carries most of Q but not always exactly all of it as KE."
+    }
+  ]
+}

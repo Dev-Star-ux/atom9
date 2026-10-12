@@ -1,0 +1,54 @@
+{
+  "moduleId": "laser_printer",
+  "title": "Laser Printer Operating Principle — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "What is the correct order of the xerographic printing process?",
+      "choices": [
+        "Charge → expose → develop → transfer → fuse",
+        "Expose → charge → fuse → develop → transfer",
+        "Develop → charge → expose → fuse → transfer",
+        "Fuse → transfer → develop → expose → charge"
+      ],
+      "answer": 0,
+      "explain": "The drum is first charged, then selectively exposed by the laser, then toner develops the latent image, which is transferred to paper and finally fused."
+    },
+    {
+      "id": "q2",
+      "type": "selection",
+      "prompt": "What does the scanning laser do to the photoconductive drum where it hits a pixel?",
+      "choices": [
+        "It discharges that pixel, lowering its surface potential",
+        "It adds extra charge to that pixel",
+        "It heats the pixel to fuse toner directly",
+        "It has no electrical effect on the drum"
+      ],
+      "answer": 0,
+      "explain": "The laser makes the photoconductive coating locally conductive so the charge there leaks away, dropping the pixel to a low residual potential."
+    },
+    {
+      "id": "q3",
+      "type": "blank",
+      "prompt": "In the develop station, charged toner particles are attracted onto the drum regions that the laser has just ____.",
+      "answer": "discharged",
+      "accept": [
+        "discharged",
+        "exposed",
+        "discharge",
+        "expose"
+      ],
+      "explain": "Toner is pulled toward the discharged (low-potential) pixels because of the resulting contrast voltage relative to the still-charged background."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "If the drum is charged to 800 V and the laser leaves a residual potential of 120 V on exposed pixels, what is the contrast voltage ΔV = V_charge − V_residual (in volts)?",
+      "answer": 680,
+      "tolerance": 5,
+      "unit": "V",
+      "explain": "ΔV = 800 V − 120 V = 680 V, the potential difference that drives toner onto the discharged pixels."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "moduleId": "quantum_computer",
+  "title": "Quantum Computer — Bits to Qubits — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "A qubit state α|0⟩ + β|1⟩ must satisfy:",
+      "choices": [
+        "|α|² + |β|² = 1",
+        "α + β = 1",
+        "α = β always",
+        "α, β are only 0 or 1"
+      ],
+      "answer": 0,
+      "explain": "Amplitudes are normalized complex numbers."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Hadamard on |0⟩ produces the equal superposition ____.",
+      "answer": "|+⟩",
+      "accept": [
+        "|+⟩",
+        "|+>",
+        "+",
+        "(|0>+|1>)/√2",
+        "(|0⟩+|1⟩)/√2"
+      ],
+      "explain": "H|0⟩ = (|0⟩+|1⟩)/√2 = |+⟩."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "Measurement of a qubit:",
+      "choices": [
+        "samples a classical bit and collapses the state",
+        "reads α and β without changing anything",
+        "is a unitary gate like H",
+        "always returns 0"
+      ],
+      "answer": 0,
+      "explain": "P(0)=|α|², P(1)=|β|²; the state collapses."
+    },
+    {
+      "id": "q4",
+      "type": "selection",
+      "prompt": "The CNOT gate is important because it can:",
+      "choices": [
+        "create entanglement between qubits",
+        "only flip a classical LED",
+        "measure both qubits at once unitarily",
+        "remove all noise"
+      ],
+      "answer": 0,
+      "explain": "CNOT is a standard entangling two-qubit gate."
+    },
+    {
+      "id": "q5",
+      "type": "calculation",
+      "prompt": "If |α|² = 0.25, what is P(1) = |β|²?",
+      "answer": 0.75,
+      "tolerance": 0.01,
+      "unit": "",
+      "explain": "|α|²+|β|²=1 ⇒ P(1)=0.75."
+    },
+    {
+      "id": "q6",
+      "type": "blank",
+      "prompt": "Pauli X is the quantum ____ gate (swaps |0⟩ and |1⟩).",
+      "answer": "NOT",
+      "accept": [
+        "NOT",
+        "not",
+        "X"
+      ],
+      "explain": "X|0⟩=|1⟩, X|1⟩=|0⟩."
+    }
+  ]
+}

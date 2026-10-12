@@ -1,0 +1,41 @@
+{
+  "moduleId": "photoelectric",
+  "title": "Photoelectric Effect — the Quantum of Light — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Photoelectrons are emitted only if photon energy exceeds:",
+      "choices": [
+        "work function φ",
+        "rest energy mc² always",
+        "kT only",
+        "binding of the nucleus"
+      ],
+      "answer": 0,
+      "explain": "hf ≥ φ for emission."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Einstein’s photoelectric equation: KE_max = hf − ____.",
+      "answer": "φ",
+      "accept": [
+        "φ",
+        "phi",
+        "work function",
+        "W"
+      ],
+      "explain": "KE_max = hf − φ."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If hf = 3.0 eV and φ = 2.0 eV, KE_max in eV is?",
+      "answer": 1,
+      "tolerance": 0.01,
+      "unit": "eV",
+      "explain": "KE = 3 − 2 = 1 eV."
+    }
+  ]
+}

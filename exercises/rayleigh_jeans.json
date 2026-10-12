@@ -1,0 +1,39 @@
+{
+  "moduleId": "rayleigh_jeans",
+  "title": "Rayleigh–Jeans — UV Catastrophe — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "The Rayleigh–Jeans formula fails at short wavelengths — the:",
+      "choices": [
+        "ultraviolet catastrophe",
+        "infrared catastrophe",
+        "photoelectric effect",
+        "Compton shift"
+      ],
+      "answer": 0,
+      "explain": "Classical RJ ∝ T/λ⁴ diverges as λ→0."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Rayleigh–Jeans spectral density is proportional to T / λ____.",
+      "answer": "4",
+      "accept": [
+        "4",
+        "^4"
+      ],
+      "explain": "u(λ) ∝ T/λ⁴."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If λ is halved (RJ regime), intensity prediction scales by what factor?",
+      "answer": 16,
+      "tolerance": 0.01,
+      "unit": "×",
+      "explain": "1/(1/2)⁴ = 16."
+    }
+  ]
+}

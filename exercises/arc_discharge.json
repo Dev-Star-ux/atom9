@@ -1,0 +1,53 @@
+{
+  "moduleId": "arc_discharge",
+  "title": "Electric Arc Discharge — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "What most distinguishes an arc discharge from a glow discharge?",
+      "choices": [
+        "The arc's hot cathode emits electrons thermionically, sustaining very high current at comparatively low voltage",
+        "The arc requires a much higher voltage than a glow discharge to strike",
+        "The arc carries less current than a glow discharge",
+        "The arc has no visible light output"
+      ],
+      "answer": 0,
+      "explain": "A glow discharge relies on a cold cathode and a large cathode-fall voltage to liberate electrons; an arc's cathode spot is hot enough for thermionic emission, so it sustains high current at relatively low voltage."
+    },
+    {
+      "id": "q2",
+      "type": "selection",
+      "prompt": "As arc current I increases (over the normal operating range), the arc voltage V:",
+      "choices": [
+        "Decreases — the arc has a negative differential resistance, dV/dI < 0",
+        "Increases proportionally, like an ordinary resistor",
+        "Stays exactly constant regardless of I",
+        "Increases quadratically with I"
+      ],
+      "answer": 0,
+      "explain": "The Ayrton-style relation V = a + b/I + (c + d/I)L has terms that fall with increasing I, giving the arc's characteristic falling V–I curve."
+    },
+    {
+      "id": "q3",
+      "type": "blank",
+      "prompt": "Because the arc's V–I curve has a ____ slope, an arc across a fixed-voltage supply with no series limiting element is unstable and current can run away.",
+      "answer": "negative",
+      "accept": [
+        "negative",
+        "falling",
+        "downward"
+      ],
+      "explain": "Negative differential resistance (dV/dI < 0) means a small rise in current lowers the arc's voltage requirement, leaving more source voltage to drive still more current — hence the need for a ballast (series resistor, reactor, or current-limited supply) to pin a stable operating point."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "Using V = a + b/I + (c + d/I)L with a=15 V, b=15 V·A, c=1 V/cm, d=3 V·A/cm, find V (in volts) for I = 100 A and L = 1 cm.",
+      "answer": 16.18,
+      "tolerance": 0.1,
+      "unit": "V",
+      "explain": "V = 15 + 15/100 + (1 + 3/100)(1) = 15 + 0.15 + 1.03 = 16.18 V."
+    }
+  ]
+}

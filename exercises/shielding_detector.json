@@ -1,0 +1,54 @@
+{
+  "moduleId": "shielding_detector",
+  "title": "Shielding and Detector Counts — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Narrow-beam attenuation follows:",
+      "choices": [
+        "I = I₀ e^(−μx)",
+        "I = I₀ + μx",
+        "I = I₀ / μx always",
+        "I independent of x"
+      ],
+      "answer": 0,
+      "explain": "Exponential law with linear attenuation coefficient μ."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "The half-value layer (HVL) is the thickness that reduces I to ____ of I₀.",
+      "answer": "1/2",
+      "accept": [
+        "1/2",
+        "0.5",
+        "half",
+        "50%"
+      ],
+      "explain": "HVL = ln2 / μ."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "For fast neutrons, which shield is generally better in this teaching model?",
+      "choices": [
+        "borated polyethylene / water",
+        "thin lead only",
+        "vacuum",
+        "glass"
+      ],
+      "answer": 0,
+      "explain": "Hydrogenous + boron materials moderate and absorb neutrons better than lead."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "If μ = 0.5 cm⁻¹ and x = 2 cm, I/I₀ = e^(−1) ≈ ?",
+      "answer": 0.37,
+      "tolerance": 0.02,
+      "unit": "",
+      "explain": "e^(−1) ≈ 0.368."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Micro-Electrokinetic Systems — Learn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    .learn-doc { padding: 8px 6px 28px; max-width: 700px; }
+    h1 {
+      font-size: 1.4rem;
+      margin: 0 0 10px;
+      color: #0f172a;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    h2 {
+      font-size: 0.95rem;
+      margin: 22px 0 8px;
+      color: #0369a1;
+      font-weight: 700;
+    }
+    p { margin: 0 0 10px; color: #475569; }
+    .formula {
+      margin: 10px 0 14px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+      border: 1px solid #bae6fd;
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.98rem;
+      color: #0c4a6e;
+      white-space: pre-wrap;
+    }
+    .step {
+      padding: 12px 14px;
+      margin: 8px 0;
+      border-left: 3px solid #38bdf8;
+      background: #f8fafc;
+      border-radius: 0 12px 12px 0;
+      color: #334155;
+    }
+    .step strong { color: #0f172a; }
+    ul { margin: 6px 0 10px 18px; color: #475569; }
+    li { margin-bottom: 4px; }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <article class="learn-doc" data-module="micro_electrokinetics">
+    <div class="tag">Experiment guide</div>
+    <h1>Micro-Electrokinetic Systems</h1>
+    <p>Three related phenomena used in lab-on-a-chip devices to move fluid and particles with electric fields: electrophoresis, electroosmosis, and dielectrophoresis.</p>
+
+    <h2>1. Principle</h2>
+    <div class="step"><strong>Electrophoresis.</strong> A charged particle sitting in a stationary fluid is pushed directly by an applied field E. Its terminal drift velocity is set by a balance between the electric force on the particle's own charge (screened by its ion cloud, characterized by the particle's zeta potential ζ) and viscous drag from the fluid.</div>
+    <div class="step"><strong>Electroosmosis.</strong> Here the particle is not necessarily charged — instead, the channel WALL is charged, and it attracts a thin layer of mobile counter-ions (the electric double layer). The field pulls on those ions, dragging the bulk fluid along with them. Because the driving layer is confined to a thin shell near the wall, the resulting flow profile is nearly flat ("plug flow") across the channel, unlike the parabolic profile of ordinary pressure-driven flow. This plug flow carries along any suspended particles, charged or neutral.</div>
+    <div class="step"><strong>Dielectrophoresis (DEP).</strong> A neutral but polarizable particle in a NON-uniform field develops an induced dipole. Because the field strength differs on the two sides of the dipole, the net force does not cancel: the particle is pushed toward regions of high field (positive DEP) or away from them (negative DEP), depending on the sign of the Clausius–Mossotti factor, which compares the particle's polarizability to the medium's. A perfectly uniform field exerts equal and opposite forces on the two poles of the dipole and produces no net force — DEP requires a field gradient.</div>
+
+    <h2>2. Key formulas</h2>
+    <div class="formula">v_EP = ε ζ E / η    (Smoluchowski equation — electrophoresis and electroosmosis)</div>
+    <div class="formula">F_DEP = 2π r³ ε_m Re[CM] ∇(E²)</div>
+    <ul>
+      <li>ε = ε₀·ε_r is the medium's permittivity; ζ is the relevant zeta potential (particle for EP, wall for EO); η is the fluid viscosity.</li>
+      <li>r is the particle radius; ε_m is the medium permittivity; Re[CM] is the real part of the Clausius–Mossotti factor, bounded between −0.5 and 1; ∇(E²) is the gradient of the squared field magnitude, which is only nonzero in a non-uniform field.</li>
+      <li>Ask which quantity you control in the simulator (mode, field, zeta potential, CM factor, particle size), and which you measure (velocity or force).</li>
+    </ul>
+
+    <h2>3. What to observe</h2>
+    <div class="step"><strong>In the sim.</strong> Switch modes to compare: in electrophoresis a single charged dot drifts through still fluid; in electroosmosis flat near-wall arrows show plug flow carrying neutral particles; in dielectrophoresis a particle is drawn toward or repelled from a narrow high-field electrode gap depending on the sign of the CM factor. The bottom plot always marks the current operating point with a gold dot.</div>
+
+    <h2>4. Step-by-step reasoning</h2>
+    <div class="step"><strong>Step A.</strong> Identify what is charged: the particle (electrophoresis), the wall (electroosmosis), or neither directly — only induced polarization matters (dielectrophoresis).</div>
+    <div class="step"><strong>Step B.</strong> Write the governing relation: <span class="formula" style="display:inline;padding:4px 8px;margin:0">v = εζE/η   or   F = 2π r³ ε_m Re[CM] ∇(E²)</span></div>
+    <div class="step"><strong>Step C.</strong> Change one control at a time (field strength, zeta potential, CM factor, particle radius) and predict the sign and size of the change before you look.</div>
+    <div class="step"><strong>Step D.</strong> Connect to applications: electrophoretic mobility separates DNA fragments by charge/size; electroosmotic plug flow pumps fluid in microchannels without moving parts; DEP sorts cells by dielectric properties without needing them to carry any net charge.</div>
+
+    <h2>5. Check your understanding</h2>
+    <p>Open <strong>Exercises</strong> in the top bar for selection, fill-in, and calculation problems on this topic.</p>
+  </article>
+</body>
+</html>

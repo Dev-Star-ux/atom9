@@ -1,0 +1,40 @@
+{
+  "moduleId": "planetary_disadvantages",
+  "title": "Disadvantages of the Planetary Model — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "A key failure of the classical planetary atom is:",
+      "choices": [
+        "orbiting charges should radiate and spiral in",
+        "nuclei are too light",
+        "electrons have no mass",
+        "Coulomb’s law fails always"
+      ],
+      "answer": 0,
+      "explain": "Accelerating charges radiate classically."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Classical electrodynamics predicts atoms are ____ (unstable).",
+      "answer": "unstable",
+      "accept": [
+        "unstable",
+        "radiating",
+        "collapsing"
+      ],
+      "explain": "Radiation damping collapses orbits."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If a classical orbit radiates and radius shrinks by 10%, remaining radius is what fraction of original?",
+      "answer": 0.9,
+      "tolerance": 0.01,
+      "unit": "",
+      "explain": "90% = 0.9."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "moduleId": "cross_section",
+  "title": "Effective Cross-section — Mean Free Path — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "A scattering cross-section has dimensions of:",
+      "choices": [
+        "area",
+        "volume",
+        "force",
+        "energy"
+      ],
+      "answer": 0,
+      "explain": "σ is an effective area for scattering."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "The geometric cross-section of a hard sphere of radius R is σ = ____.",
+      "answer": "πR²",
+      "accept": [
+        "πR^2",
+        "pi R^2",
+        "πR²",
+        "pi*R^2"
+      ],
+      "explain": "Target presents area πR²."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If R = 2 (same units), what is πR²? Use π ≈ 3.14.",
+      "answer": 12.56,
+      "tolerance": 0.1,
+      "unit": "",
+      "explain": "π×4 ≈ 12.56."
+    }
+  ]
+}

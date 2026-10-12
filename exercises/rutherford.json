@@ -1,0 +1,40 @@
+{
+  "moduleId": "rutherford",
+  "title": "Rutherford Scattering — the Nucleus — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Rutherford scattering showed the atom’s positive charge is:",
+      "choices": [
+        "concentrated in a tiny nucleus",
+        "spread uniformly (Thomson plum pudding)",
+        "on the electron cloud only",
+        "zero"
+      ],
+      "answer": 0,
+      "explain": "Large-angle α scatters require a compact massive nucleus."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "The projectile in Rutherford’s classic experiment was an ____ particle.",
+      "answer": "alpha",
+      "accept": [
+        "alpha",
+        "α",
+        "helium nucleus"
+      ],
+      "explain": "α particles from radioactive sources."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If closest approach distance scales as 1/E, and E doubles, closest approach becomes what factor of the original?",
+      "answer": 0.5,
+      "tolerance": 0.01,
+      "unit": "×",
+      "explain": "d ∝ 1/E ⇒ half."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "moduleId": "photomultiplier_tube",
+  "title": "Photomultiplier Tube — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "What is the role of the photocathode in a photomultiplier tube?",
+      "choices": [
+        "It absorbs incident photons and ejects photoelectrons via the photoelectric effect",
+        "It stores the amplified charge for readout",
+        "It cools the dynode chain",
+        "It filters out background light"
+      ],
+      "answer": 0,
+      "explain": "The photocathode converts incoming photons into a photocurrent of photoelectrons, the starting point of the cascade."
+    },
+    {
+      "id": "q2",
+      "type": "selection",
+      "prompt": "Why does the total gain grow exponentially with the number of dynode stages n?",
+      "choices": [
+        "Because each stage multiplies the electron count by a factor δ, so G = δ^n compounds stage after stage",
+        "Because each stage adds a fixed number of electrons",
+        "Because the voltage doubles at every stage",
+        "Because only the first dynode amplifies; the rest just pass electrons through"
+      ],
+      "answer": 0,
+      "explain": "Secondary emission multiplies the cloud by δ at every dynode, so the stages compound multiplicatively: G = δ^n."
+    },
+    {
+      "id": "q3",
+      "type": "blank",
+      "prompt": "Raising the inter-dynode voltage makes the secondary emission yield δ ____, which increases the overall gain.",
+      "answer": "increase",
+      "accept": [
+        "increase",
+        "go up",
+        "rise",
+        "larger",
+        "bigger"
+      ],
+      "explain": "Higher accelerating voltage gives each electron more energy on impact, releasing more secondary electrons per stage (larger δ), raising G = δ^n."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "If the secondary emission yield is δ = 4 per stage and there are n = 9 dynode stages, what is the total gain G = δ^n? (give as a power of 10, e.g. 1e5)",
+      "answer": 262144,
+      "tolerance": 5000,
+      "unit": "",
+      "explain": "G = 4^9 = 262144 ≈ 2.6×10^5 — a huge amplification from just 9 stages."
+    }
+  ]
+}

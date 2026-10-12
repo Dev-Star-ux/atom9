@@ -1,0 +1,54 @@
+{
+  "moduleId": "pet_coincidence",
+  "title": "PET 511 keV Coincidence — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "PET coincidence detects:",
+      "choices": [
+        "two 511 keV γ rays from e⁺e⁻ annihilation",
+        "alpha pairs",
+        "only single 140 keV γ",
+        "radio waves"
+      ],
+      "answer": 0,
+      "explain": "β⁺ annihilates with e⁻ → two back-to-back 511 keV photons."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Random coincidences grow with a wider coincidence ____.",
+      "answer": "window",
+      "accept": [
+        "window",
+        "time window",
+        "τ",
+        "tau"
+      ],
+      "explain": "Randoms ∝ singles² × window width."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "A common PET tracer for metabolism imaging is:",
+      "choices": [
+        "FDG (¹⁸F)",
+        "Am-241",
+        "Pu-239",
+        "BF₃ gas"
+      ],
+      "answer": 0,
+      "explain": "Fluorodeoxyglucose labeled with ¹⁸F is widely used."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "If true = 800 /s and random = 200 /s (ignore scatter), true fraction % is?",
+      "answer": 80,
+      "tolerance": 2,
+      "unit": "%",
+      "explain": "800/(800+200)=0.8 → 80%."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "moduleId": "variational_method",
+  "title": "Variational Method (Rayleigh–Ritz) — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Variational estimate of ground energy is always:",
+      "choices": [
+        "≥ true E₀",
+        "≤ true E₀",
+        "exact",
+        "zero"
+      ],
+      "answer": 0,
+      "explain": "Rayleigh–Ritz upper bound."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Minimise ⟨ψ|____|ψ⟩ over trial parameters.",
+      "answer": "H",
+      "accept": [
+        "H",
+        "Hamiltonian"
+      ],
+      "explain": "Expectation of Hamiltonian."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "For trial exp(-αx²) on HO, optimal α=0.5 gives ⟨H⟩=0.25 in units where exact E₀=0.5 — ratio estimate/exact?",
+      "answer": 0.5,
+      "tolerance": 0.02,
+      "unit": "",
+      "explain": "0.25/0.5=0.5 (teaching model numbers)."
+    }
+  ]
+}

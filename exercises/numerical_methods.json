@@ -1,0 +1,39 @@
+{
+  "moduleId": "numerical_methods",
+  "title": "ODE Integrators Compared — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Euler method on harmonic oscillator energy typically:",
+      "choices": [
+        "drifts upward or downward",
+        "is exactly conserved",
+        "doubles every step",
+        "is undefined"
+      ],
+      "answer": 0,
+      "explain": "Non-symplectic ⇒ energy drift."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Leapfrog / Verlet is ____ (symplectic/non-symplectic).",
+      "answer": "symplectic",
+      "accept": [
+        "symplectic",
+        "symplectic-like"
+      ],
+      "explain": "Better long-term energy behaviour."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If ω=1 and Δt=0.1, one Euler step on x=1,v=0 gives v≈?",
+      "answer": -0.1,
+      "tolerance": 0.02,
+      "unit": "",
+      "explain": "v+=−ω²x·Δt = −0.1."
+    }
+  ]
+}

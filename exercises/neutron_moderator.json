@@ -1,0 +1,45 @@
+{
+  "moduleId": "neutron_moderator",
+  "title": "Moderator & Thermal Neutrons — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Thermal neutrons are most effective for fission in U-235 because:",
+      "choices": [
+        "fission cross-section peaks at low energy",
+        "they are faster",
+        "they have no mass",
+        "moderator absorbs all neutrons"
+      ],
+      "answer": 0,
+      "explain": "σ_fission is largest near thermal energies (~0.025 eV)."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "A moderator slows fast neutrons by elastic collisions with ____ nuclei.",
+      "answer": "light",
+      "accept": [
+        "light",
+        "low mass",
+        "hydrogen",
+        "H"
+      ],
+      "explain": "Light nuclei take more energy per collision (ξ factor)."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "Which moderator reaches thermal energy in fewer collisions (teaching model)?",
+      "choices": [
+        "light water (~18)",
+        "graphite (~114)",
+        "same always",
+        "none work"
+      ],
+      "answer": 0,
+      "explain": "Fewer collisions in water → faster moderation in this teaching model."
+    }
+  ]
+}

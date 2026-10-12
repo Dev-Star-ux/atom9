@@ -1,0 +1,40 @@
+{
+  "moduleId": "nuclear_fusion",
+  "title": "Nuclear Fusion — D–T Reaction — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "D–T fusion is hard mainly because nuclei:",
+      "choices": [
+        "Repel each other (Coulomb barrier)",
+        "Attract at all distances",
+        "Have zero charge",
+        "Cannot release energy"
+      ],
+      "answer": 0,
+      "explain": "Positive charges → Coulomb barrier."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "²H + ³H → ⁴He + ____ + energy.",
+      "answer": "n",
+      "accept": [
+        "n",
+        "neutron",
+        "a neutron"
+      ],
+      "explain": "D–T → He-4 + neutron + 17.6 MeV."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "D–T releases ~17.6 MeV. Rounded to nearest integer?",
+      "answer": 18,
+      "tolerance": 1,
+      "unit": "MeV",
+      "explain": "17.6 ≈ 18."
+    }
+  ]
+}

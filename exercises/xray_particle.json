@@ -1,0 +1,40 @@
+{
+  "moduleId": "xray_particle",
+  "title": "Particle Property of X-Rays — Photons — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Hard X-rays eject electrons when photon energy exceeds:",
+      "choices": [
+        "binding energy W",
+        "only kT",
+        "nuclear binding always",
+        "sound energy"
+      ],
+      "answer": 0,
+      "explain": "Photoelectric absorption in matter."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Photon energy E = hc / ____.",
+      "answer": "λ",
+      "accept": [
+        "λ",
+        "lambda",
+        "wavelength"
+      ],
+      "explain": "E = hc/λ."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If E = 10 keV and W = 7 keV, photoelectron KE in keV is?",
+      "answer": 3,
+      "tolerance": 0.01,
+      "unit": "keV",
+      "explain": "KE = E − W = 3 keV."
+    }
+  ]
+}

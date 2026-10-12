@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Wheatstone Bridge — Learn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    .learn-doc { padding: 8px 6px 28px; max-width: 700px; }
+    h1 {
+      font-size: 1.4rem;
+      margin: 0 0 10px;
+      color: #0f172a;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    h2 {
+      font-size: 0.95rem;
+      margin: 22px 0 8px;
+      color: #0369a1;
+      font-weight: 700;
+    }
+    p { margin: 0 0 10px; color: #475569; }
+    .formula {
+      margin: 10px 0 14px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+      border: 1px solid #bae6fd;
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.98rem;
+      color: #0c4a6e;
+      white-space: pre-wrap;
+    }
+    .step {
+      padding: 12px 14px;
+      margin: 8px 0;
+      border-left: 3px solid #38bdf8;
+      background: #f8fafc;
+      border-radius: 0 12px 12px 0;
+      color: #334155;
+    }
+    .step strong { color: #0f172a; }
+    ul { margin: 6px 0 10px 18px; color: #475569; }
+    li { margin-bottom: 4px; }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <article class="learn-doc" data-module="wheatstone_bridge">
+    <div class="tag">Experiment guide</div>
+    <h1>Wheatstone Bridge</h1>
+    <p>Four resistors in a diamond, a battery across one diagonal, a galvanometer across the other: balance the bridge to measure an unknown resistance with high precision.</p>
+
+    <h2>1. Principle</h2>
+    <div class="step"><strong>Idea.</strong> R1 and R2 form the top two arms, R3 and Rx the bottom two arms, meeting at a left node and a right node. The battery drives current from the top node to the bottom node; the galvanometer bridges the left and right nodes. Each side (R1–R3 and R2–Rx) is just a voltage divider. When the two dividers produce the same voltage at the left and right nodes, no current flows through the galvanometer — the bridge is "balanced."</div>
+
+    <h2>2. Key formulas</h2>
+    <div class="formula">R_1 R_x = R_2 R_3</div>
+    <ul>
+      <li>R1, R2, R3: known, adjustable resistors (Ω). Rx: the unknown resistance (Ω).</li>
+      <li>At balance, Rx = R2·R3 / R1 — the unknown is found purely from a ratio of known resistors, not from any absolute voltage or current measurement.</li>
+      <li>Off balance, the galvanometer sees a small bridge voltage Vg ≈ V·[R3/(R1+R3) − Rx/(R2+Rx)] (assuming a high-impedance galvanometer that draws negligible current).</li>
+    </ul>
+
+    <h2>3. What to observe</h2>
+    <div class="step"><strong>In the sim.</strong> Adjust R1, R2, R3 and Rx and watch the galvanometer needle: it swings toward zero as the bridge approaches balance, and sits still (green) exactly when R1·Rx = R2·R3. The lower plot shows Vg vs Rx, crossing zero at the balance point.</div>
+
+    <h2>4. Step-by-step reasoning</h2>
+    <div class="step"><strong>Step A.</strong> Picture the two arms R1–R3 and R2–Rx as independent voltage dividers fed by the same battery.</div>
+    <div class="step"><strong>Step B.</strong> Write the governing relation: <span class="formula" style="display:inline;padding:4px 8px;margin:0">R_1 R_x = R_2 R_3</span></div>
+    <div class="step"><strong>Step C.</strong> Change Rx (or R1, R2, R3) and predict whether the galvanometer deflection grows or shrinks before you look.</div>
+    <div class="step"><strong>Step D.</strong> Because balance is a null (zero-current) condition, the measurement does not depend on the battery voltage being known precisely — this is why bridge methods are so precise and self-calibrating.</div>
+
+    <h2>5. Check your understanding</h2>
+    <p>Open <strong>Exercises</strong> in the top bar for selection, fill-in, and calculation problems on this topic.</p>
+  </article>
+</body>
+</html>

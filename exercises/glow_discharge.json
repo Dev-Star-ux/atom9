@@ -1,0 +1,53 @@
+{
+  "moduleId": "glow_discharge",
+  "title": "Glow Discharge — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Paschen's law states that the breakdown voltage of a gas gap depends primarily on:",
+      "choices": [
+        "the product p·d (pressure × electrode spacing)",
+        "pressure alone, regardless of spacing",
+        "electrode spacing alone, regardless of pressure",
+        "the color of the gas"
+      ],
+      "answer": 0,
+      "explain": "V_b is a function of the single variable p·d, not p or d individually."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "The Paschen curve has a ____ at some p·d, below and above which V_b is higher.",
+      "answer": "minimum",
+      "accept": [
+        "minimum",
+        "Paschen minimum",
+        "min"
+      ],
+      "explain": "At low p·d electrons lack enough collisions to ionize; at high p·d they collide too often to gain enough energy between collisions — both raise V_b, leaving a minimum in between."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "In the luminous structure of a glow discharge, the negative glow and positive column are best described as:",
+      "choices": [
+        "bright zones of ionization/excitation activity separated by darker zones where electrons are gaining energy without much excitation",
+        "regions where no current flows at all",
+        "the same physical region seen twice",
+        "artifacts only visible in vacuum, never in real tubes"
+      ],
+      "answer": 0,
+      "explain": "The negative glow (bright, near cathode) and positive column (long, dim, extends to anode) are luminous regions; dark spaces (Crookes, Faraday) are where electrons accelerate without enough excitation collisions to glow brightly."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "Using V_b = B(pd)/[ln(A·pd) − ln(ln(1+1/γ))] with A=15 (cm·Torr)⁻¹, B=365 V/(cm·Torr), γ=0.01, estimate V_b (in volts) at p·d = 2 Torr·cm.",
+      "answer": 390,
+      "tolerance": 20,
+      "unit": "V",
+      "explain": "ln(A·pd)=ln(30)≈3.401; ln(1+1/γ)=ln(101)≈4.615, ln(4.615)≈1.529; denom≈1.872; V_b≈365×2/1.872≈390 V."
+    }
+  ]
+}

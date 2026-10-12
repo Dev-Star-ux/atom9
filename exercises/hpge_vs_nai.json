@@ -1,0 +1,52 @@
+{
+  "moduleId": "hpge_vs_nai",
+  "title": "HPGe vs NaI Resolution — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Compared with NaI(Tl), HPGe energy resolution at 662 keV is typically:",
+      "choices": [
+        "much better (~0.2% vs ~7%)",
+        "much worse",
+        "exactly the same",
+        "only better for alphas"
+      ],
+      "answer": 0,
+      "explain": "Semiconductor HPGe peaks are far sharper than scintillator NaI peaks."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Resolution R is defined as FWHM / ____.",
+      "answer": "E",
+      "accept": [
+        "E",
+        "energy"
+      ],
+      "explain": "R = FWHM/E, often quoted in percent."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "HPGe detectors usually need cryogenic cooling mainly to:",
+      "choices": [
+        "reduce leakage current / noise for good resolution",
+        "make gammas colder",
+        "block neutrons",
+        "increase dead time"
+      ],
+      "answer": 0,
+      "explain": "Cooling (LN₂ or cryocooler) keeps leakage noise low so peaks stay sharp."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "If FWHM = 1.3 keV at E = 662 keV, R in percent is about?",
+      "answer": 0.2,
+      "tolerance": 0.05,
+      "unit": "%",
+      "explain": "100×1.3/662 ≈ 0.2%."
+    }
+  ]
+}

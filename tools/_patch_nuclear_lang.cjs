@@ -1,0 +1,181 @@
+const fs = require('fs');
+const j = JSON.parse(fs.readFileSync('lang/en.json', 'utf8'));
+
+j.modules.nuclear_fission = {
+  navTitle: 'Nuclear Fission',
+  title: 'Nuclear Fission — Chain Reaction',
+  desc: 'A neutron splits U-235 into two fragments plus more neutrons (~200 MeV). Watch the chain grow or die — control it with enrichment and rods.',
+  hint: '2D|3D · Fire a neutron · raise enrichment to grow the chain · push rods in to stop it',
+  note: 'k = neutrons in the next generation / neutrons now. k<1 dies out, k≈1 steady (reactor), k>1 grows fast.',
+  principle: {
+    desc: 'A slow neutron can split a uranium-235 nucleus into two lighter fragments, free 2–3 more neutrons, and release about 200 MeV. If those neutrons cause more fissions, you get a chain reaction. Reactors keep k near 1; bombs need a fast supercritical burst.',
+    equation: 'U-235 + n → fragments A + B + (2–3)n + ~200 MeV    ·    k = N_next / N_now',
+    observe: 'Orange = U-235 (can fission). Grey = U-238 (usually absorbs/scatters). Blue = neutron. Orange pieces flying out = fission fragments. Rods absorb neutrons.',
+  },
+  guide: {
+    title: 'What you are watching',
+    s1: 'Blue neutron flies into the fuel.',
+    s2: 'If it hits orange U-235 → FISSION (flash + two fragments).',
+    s3: 'New neutrons fly out — they may hit more U-235.',
+    s4: 'Enrichment raises k; control rods lower k.',
+    tip: 'Press "Fire neutron" then try enrichment high / rods out to see a growing chain.',
+  },
+  how: {
+    title: 'How to use this lab',
+    body: 'Think in three words: hit → split → multiply.',
+    a: 'Start with rods partly in. Fire a neutron and watch one fission.',
+    b: 'Raise enrichment — more orange nuclei → more chance the chain continues.',
+    c: 'Push rods deeper — neutrons get absorbed → chain dies (subcritical).',
+    d: 'Switch to 3D to see fuel pins and rods sliding into the core.',
+  },
+  controls: {
+    title: 'Controls',
+    enrichment: 'U-235 enrichment',
+    enrichmentHelp: 'Percent of nuclei that are fissile U-235 (rest mostly U-238).',
+    rods: 'Control rod insertion',
+    rodsHelp: 'How deep absorbers sit in the fuel. Deeper = smaller k.',
+    fire: 'Fire neutron',
+    reset: 'Reset fuel',
+  },
+  info: { k: 'Multiplication k', status: 'Chain status', meaning: 'In plain words' },
+  status: {
+    subcritical: 'Subcritical (dies out)',
+    critical: 'Near critical (steady)',
+    supercritical: 'Supercritical (grows)',
+  },
+  ai: {
+    title: 'AI — Finds critical enrichment',
+    desc: 'Collect (enrichment → k) data. AI finds enrichment that makes k≈1.',
+    collect: 'Collect k data',
+    find: 'Find critical %',
+    stop: 'Stop',
+    estimate: 'Enrichment',
+    error: 'Error',
+    true: 'Critical %',
+    how: 'Criticality needs k≈1.\nThe AI sees noisy k at many enrichments and searches for the % that best gives k=1.',
+  },
+  tips: {
+    fuel: { title: 'Fuel nuclei', desc: 'Orange U-235 can fission; grey U-238 usually does not.' },
+    rods: { title: 'Control rods', desc: 'Absorb neutrons to lower k.' },
+  },
+};
+
+j.modules.nuclear_fusion = {
+  navTitle: 'Nuclear Fusion',
+  title: 'Nuclear Fusion — D–T Reaction',
+  desc: 'Heat deuterium and tritium until they overcome repulsion and fuse into helium — releasing 17.6 MeV (star / tokamak teaching model).',
+  hint: '2D|3D · raise temperature · watch barrier vs KE · fuse flashes when they stick; bounce when cold',
+  note: 'Positive nuclei repel (Coulomb barrier). High T gives kinetic energy so they can get close enough for the strong force to fuse them.',
+  principle: {
+    desc: 'Fusion joins light nuclei. Deuterium + tritium make helium-4, a neutron, and 17.6 MeV. On Earth we need huge temperatures because both nuclei are positively charged and repel until they get extremely close.',
+    equation: '^{2}H + ^{3}H → ^{4}He + n + 17.6 MeV',
+    observe: 'Top: D and T approach. Red dashed line = repulsion. Flash = fusion (He + n). Bottom plot: red barrier vs green KE from temperature.',
+  },
+  guide: {
+    title: 'What you are watching',
+    s1: 'D (blue) and T (purple) fly toward each other.',
+    s2: 'Positive charges push them apart (Coulomb barrier).',
+    s3: 'If hot enough, they fuse → He + neutron + 17.6 MeV.',
+    s4: 'If too cold, they bounce — raise T and try again.',
+    tip: 'Watch the green KE line climb toward the red barrier as you heat the plasma.',
+  },
+  how: {
+    title: 'How to use this lab',
+    body: 'Fusion needs heat to beat electrical repulsion.',
+    a: 'Keep T low — you should see bounce / repel.',
+    b: 'Raise temperature until fusion flashes appear often.',
+    c: 'Increase confinement — particles stay together longer → higher fuse chance.',
+    d: 'Compare 2D barrier plot with 3D tokamak ring collision.',
+  },
+  controls: {
+    title: 'Plasma controls',
+    temp: 'Temperature',
+    tempHelp: 'Higher T → faster nuclei → better chance to fuse.',
+    confinement: 'Confinement',
+    confinementHelp: 'How well we keep particles together (tokamak-style boost).',
+  },
+  info: {
+    kev: 'Typical KE',
+    prob: 'Fusion chance',
+    q: 'Energy per fusion',
+    status: 'Outcome',
+    meaning: 'In plain words',
+  },
+  status: { repel: 'Mostly bounce', rare: 'Rare fusions', ignition: 'Frequent fusion' },
+  ai: {
+    title: 'AI — Finds ignition temperature',
+    desc: 'Collect (T → fusion probability). AI finds T where P≈50%.',
+    collect: 'Collect fusion data',
+    find: 'Find T',
+    stop: 'Stop',
+    estimate: 'Temperature',
+    error: 'Error',
+    true: 'T at P≈50%',
+    how: 'Fusion probability rises with temperature.\nThe AI fits noisy P(T) to find where P crosses about one half.',
+  },
+  tips: {
+    deuteron: { title: 'Deuterium', desc: 'Heavy hydrogen (p+n).' },
+    triton: { title: 'Tritium', desc: 'Heavier hydrogen (p+2n).' },
+  },
+};
+
+j.modules.radioactive_decay = {
+  navTitle: 'Radioactive Decay',
+  title: 'Law of Radioactive Decay',
+  desc: 'Unstable nuclei decay at random. On average the sample follows N = N₀ e^(−λt) with half-life T½ = ln2/λ.',
+  hint: '2D|3D · set half-life · watch atoms vanish · compare green sample vs blue ideal curve',
+  note: 'Each nucleus decays independently. Half-life is the average time for half the remaining nuclei to decay.',
+  principle: {
+    desc: 'Radioactivity is random for each nucleus but predictable for a large sample. The number of undecayed nuclei falls exponentially. After one half-life, about half remain; after two, about a quarter, and so on.',
+    equation: 'N(t)=N₀ e^(−λt)    ·    T½ = ln2 / λ    ·    A = λN',
+    observe: 'Green dots = undecayed. Yellow sparks = decay particles. Blue curve = ideal law; green path = this random sample. Markers show 1×, 2×, 3× half-life.',
+  },
+  guide: {
+    title: 'What you are watching',
+    s1: 'Each green nucleus waits a random time, then decays.',
+    s2: 'Yellow flash = emitted particle (α / β teaching model).',
+    s3: 'Blue curve = exact exponential law; green = real sample noise.',
+    s4: 'Yellow lines mark 1×, 2×, 3× half-life (50%, 25%, 12.5%).',
+    tip: 'Shorten T½ to see the sample empty faster. Reset to start a new sample.',
+  },
+  how: {
+    title: 'How to use this lab',
+    body: 'Random each atom — predictable as a crowd.',
+    a: 'Watch green nuclei disappear one by one.',
+    b: 'Compare the live green path to the smooth blue N(t) curve.',
+    c: 'Change half-life — shorter T½ → faster decay.',
+    d: 'In 3D, nuclei sit in a sample vial; daughters turn grey after decay.',
+  },
+  controls: {
+    title: 'Sample',
+    n0: 'Initial nuclei N₀',
+    n0Help: 'How many nuclei at t=0.',
+    halfLife: 'Half-life T½',
+    halfLifeHelp: 'Average time for half the remaining sample to decay.',
+    reset: 'Reset sample',
+  },
+  info: {
+    lambda: 'Decay constant λ',
+    n: 'Ideal N(t)',
+    activity: 'Activity A=λN',
+    time: 'Elapsed time',
+    meaning: 'In plain words',
+  },
+  ai: {
+    title: 'AI — Discovers half-life',
+    desc: 'Collect noisy N(t)/N₀ points. AI finds T½.',
+    collect: 'Collect decay data',
+    find: 'Find T½',
+    stop: 'Stop',
+    estimate: 'Half-life',
+    error: 'Error',
+    true: 'True T½',
+    how: 'The shape of the decay curve encodes T½.\nThe AI searches for the half-life that best fits the noisy fractions.',
+  },
+  tips: {
+    cloud: { title: 'Nucleus cloud', desc: 'Each sphere is one unstable nucleus waiting to decay.' },
+  },
+};
+
+fs.writeFileSync('lang/en.json', JSON.stringify(j, null, 2) + '\n');
+console.log('lang ok');

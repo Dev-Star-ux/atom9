@@ -1,0 +1,40 @@
+{
+  "moduleId": "complex_phasor",
+  "title": "Complex Phasors & Superposition — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Adding two same-frequency phasors is equivalent to:",
+      "choices": [
+        "vector addition in complex plane",
+        "matrix multiplication only",
+        "differentiation",
+        "integration"
+      ],
+      "answer": 0,
+      "explain": "Superposition = add complex amplitudes."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Real part of e^{iωt} is ____.",
+      "answer": "cos(ωt)",
+      "accept": [
+        "cos(ωt)",
+        "cos ωt",
+        "cosine"
+      ],
+      "explain": "Euler formula."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "Two equal phasors 180° apart sum to amplitude?",
+      "answer": 0,
+      "tolerance": 0.01,
+      "unit": "",
+      "explain": "Destructive interference ⇒ zero."
+    }
+  ]
+}

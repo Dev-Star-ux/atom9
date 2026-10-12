@@ -1,0 +1,40 @@
+{
+  "moduleId": "binding_energy",
+  "title": "Binding Energy per Nucleon — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Binding energy per nucleon B/A is highest near:",
+      "choices": [
+        "iron-56 (medium A)",
+        "hydrogen-1",
+        "uranium-238",
+        "helium-3 only"
+      ],
+      "answer": 0,
+      "explain": "The curve peaks near A≈56 — most stable per nucleon."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Both fission of heavy nuclei and fusion of light nuclei move toward ____ B/A.",
+      "answer": "higher",
+      "accept": [
+        "higher",
+        "greater",
+        "more"
+      ],
+      "explain": "Products are closer to the iron peak."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If B/A rises from 7.0 to 8.0 MeV for A=100 nucleons, approximate ΔB in MeV?",
+      "answer": 100,
+      "tolerance": 1,
+      "unit": "MeV",
+      "explain": "ΔB ≈ (8−7)×100 = 100 MeV (teaching order)."
+    }
+  ]
+}

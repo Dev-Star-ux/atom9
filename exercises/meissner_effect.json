@@ -1,0 +1,54 @@
+{
+  "moduleId": "meissner_effect",
+  "title": "Meissner Effect — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "What distinguishes the Meissner effect from a material simply being a perfect conductor (zero resistance)?",
+      "choices": [
+        "The superconductor actively expels an existing field, whereas a perfect conductor would only freeze in whatever field was present when it became resistance-free",
+        "They are exactly the same phenomenon",
+        "A perfect conductor expels fields but a superconductor does not",
+        "The Meissner effect only applies above T_c"
+      ],
+      "answer": 0,
+      "explain": "Zero resistance alone would trap (freeze) any pre-existing field. The Meissner effect actively pushes the field out of the bulk below T_c, regardless of field history — a distinct, stronger statement about the superconducting phase."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "At depth x = λ_L (one London penetration depth) inside the superconductor, the field has dropped to ____ of its surface value B_0.",
+      "answer": "1/e",
+      "accept": [
+        "1/e",
+        "0.37",
+        "37%",
+        "≈37%"
+      ],
+      "explain": "B(λ_L) = B_0 e^(−λ_L/λ_L) = B_0/e ≈ 0.368 B_0, about 37% of the surface value."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "Why does the small magnet levitate above the puck when T<T_c but rest directly on it when T≥T_c?",
+      "choices": [
+        "Below T_c the puck expels the magnet's field and the resulting screening currents repel the magnet; above T_c the puck is normal and the field passes through with no repulsion",
+        "The puck becomes heavier above T_c",
+        "Levitation is caused by air pressure, unrelated to temperature",
+        "The magnet's field reverses direction above T_c"
+      ],
+      "answer": 0,
+      "explain": "Diamagnetic repulsion from the Meissner screening currents supports the magnet's weight only while the puck is superconducting; once T ≥ T_c the field simply penetrates and there is no repulsive force."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "If B_0 = 20 mT and λ_L = 150 nm, what is B(x) at depth x = 300 nm (T<T_c)? Use B(x) = B_0 e^(−x/λ_L).",
+      "answer": 2.71,
+      "tolerance": 0.3,
+      "unit": "mT",
+      "explain": "x/λ_L = 2, so B = 20·e^(−2) ≈ 20 × 0.1353 ≈ 2.71 mT."
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Lightning Rod (Franklin Rod) — Learn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    .learn-doc { padding: 8px 6px 28px; max-width: 700px; }
+    h1 {
+      font-size: 1.4rem;
+      margin: 0 0 10px;
+      color: #0f172a;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    h2 {
+      font-size: 0.95rem;
+      margin: 22px 0 8px;
+      color: #0369a1;
+      font-weight: 700;
+    }
+    p { margin: 0 0 10px; color: #475569; }
+    .formula {
+      margin: 10px 0 14px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+      border: 1px solid #bae6fd;
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.98rem;
+      color: #0c4a6e;
+      white-space: pre-wrap;
+    }
+    .step {
+      padding: 12px 14px;
+      margin: 8px 0;
+      border-left: 3px solid #38bdf8;
+      background: #f8fafc;
+      border-radius: 0 12px 12px 0;
+      color: #334155;
+    }
+    .step strong { color: #0f172a; }
+    ul { margin: 6px 0 10px 18px; color: #475569; }
+    li { margin-bottom: 4px; }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <article class="learn-doc" data-module="lightning_rod">
+    <div class="tag">Experiment guide</div>
+    <h1>Lightning Rod (Franklin Rod)</h1>
+    <p>A sharp, grounded rod above a structure and the rolling-sphere method for estimating how much ground it protects.</p>
+
+    <h2>1. Principle</h2>
+    <div class="step"><strong>Idea.</strong> A lightning rod (Franklin rod) works in two complementary ways. First, its sharp point concentrates the local electric field — the same geometry that drives corona discharge — enough to trigger a mild, continuous corona/streamer that bleeds off some charge and makes a strike starting right at the structure less likely. Second, and more importantly, the rod offers a low-impedance path straight to earth: it is the tallest, sharpest, best-grounded conductor around, so if a lightning stroke is going to occur nearby, it preferentially attaches to the rod rather than to the building, and the enormous current is conducted safely to ground instead of through the structure's walls and occupants. This grounded-path role is what a rod has that an ungrounded sharp point (as in the corona-discharge module) does not.</div>
+
+    <h2>2. Key formulas</h2>
+    <div class="formula">r_s = 10 · I^0.65&#10;R_p = sqrt(r_s² − (r_s − h)²)  for h ≤ r_s&#10;R_p ≈ r_s  for h ≥ r_s</div>
+    <ul>
+      <li>r_s (m) is the striking distance — how close a descending leader with prospective peak current I (kA) gets before "choosing" the nearest grounded point to attach to.</li>
+      <li>h (m) is the rod height above the structure it protects; R_p (m) is the horizontal protection radius at ground level.</li>
+      <li>The rolling-sphere method imagines a sphere of radius r_s rolling across the ground and over the structure — anywhere the sphere can touch without first touching the rod tip is considered protected.</li>
+    </ul>
+
+    <h2>3. What to observe</h2>
+    <div class="step"><strong>In the sim.</strong> The top view shows the rod, the rolling sphere (dashed arc) tangent to both the rod tip and the ground, the shaded protected zone on the ground, and an occasional jagged bolt showing a strike being captured by the rod tip rather than the structure. The bottom plot shows protection radius R_p against prospective stroke current I for the current rod height, with a marker at the current I.</div>
+
+    <h2>4. Step-by-step reasoning</h2>
+    <div class="step"><strong>Step A.</strong> Smaller prospective strikes (lower I) have a smaller striking distance r_s — they are "choosier" and only attach to something very close by, so they are less reliably captured by a rod some distance away.</div>
+    <div class="step"><strong>Step B.</strong> Write the governing relation: <span class="formula" style="display:inline;padding:4px 8px;margin:0">r_s = 10 · I^0.65,  R_p = sqrt(r_s² − (r_s − h)²)</span></div>
+    <div class="step"><strong>Step C.</strong> Increase the rod height h and watch R_p grow (for fixed I) — a taller rod reaches farther into the rolling sphere's geometry and protects more ground, up to the point where h ≥ r_s and the geometry saturates.</div>
+    <div class="step"><strong>Step D.</strong> Increase the design stroke current I and watch both r_s and R_p grow — engineers usually size protection for a chosen minimum current (a lower design current gives more conservative, smaller protection radii).</div>
+
+    <h2>5. Check your understanding</h2>
+    <p>Open <strong>Exercises</strong> in the top bar for selection, fill-in, and calculation problems on this topic.</p>
+  </article>
+</body>
+</html>

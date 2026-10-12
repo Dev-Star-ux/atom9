@@ -1,0 +1,40 @@
+{
+  "moduleId": "schrodinger_calculator",
+  "title": "1D Schrödinger Calculator — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Infinite square well energies scale as:",
+      "choices": [
+        "n²",
+        "n",
+        "1/n",
+        "n³"
+      ],
+      "answer": 0,
+      "explain": "Eₙ∝n²."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "FDM replaces d²/dx² by a ____ difference stencil.",
+      "answer": "finite",
+      "accept": [
+        "finite",
+        "second-order finite",
+        "discrete"
+      ],
+      "explain": "Discrete Laplacian on grid."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If E₁=1 and E₂=4 (units), ratio E₂/E₁?",
+      "answer": 4,
+      "tolerance": 0.01,
+      "unit": "×",
+      "explain": "4/1=4."
+    }
+  ]
+}

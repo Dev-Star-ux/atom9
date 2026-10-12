@@ -1,0 +1,39 @@
+{
+  "moduleId": "planetary",
+  "title": "Planetary Nuclear Model — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "In a classical planetary atom model, electrons are imagined to:",
+      "choices": [
+        "orbit the nucleus like planets",
+        "fill standing-wave orbitals only",
+        "have no charge",
+        "sit still at the nucleus"
+      ],
+      "answer": 0,
+      "explain": "Rutherford–Bohr era “solar system” picture of the atom."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Coulomb force provides the ____ force for a classical orbiting electron.",
+      "answer": "centripetal",
+      "accept": [
+        "centripetal",
+        "centrepetal"
+      ],
+      "explain": "k e²/r² = m v²/r."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If orbital radius doubles and speed is unchanged, centripetal acceleration v²/r becomes what factor of the original?",
+      "answer": 0.5,
+      "tolerance": 0.01,
+      "unit": "×",
+      "explain": "a ∝ 1/r ⇒ half."
+    }
+  ]
+}

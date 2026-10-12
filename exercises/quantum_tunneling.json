@@ -1,0 +1,40 @@
+{
+  "moduleId": "quantum_tunneling",
+  "title": "Barrier Tunneling — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Tunneling transmission through a high wide barrier typically:",
+      "choices": [
+        "decreases exponentially with width",
+        "always equals 1",
+        "increases with width",
+        "is independent of E"
+      ],
+      "answer": 0,
+      "explain": "T∝e^{-2κa} for E<V₀."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "When E < V₀ inside a barrier, ψ ____ exponentially.",
+      "answer": "decays",
+      "accept": [
+        "decays",
+        "decreases",
+        "falls off"
+      ],
+      "explain": "Evanescent wave in classically forbidden region."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If T drops by factor e⁻² when width doubles (teaching), T(a=2)/T(a=1) ≈?",
+      "answer": 0.135,
+      "tolerance": 0.02,
+      "unit": "",
+      "explain": "e^{-2}≈0.135."
+    }
+  ]
+}

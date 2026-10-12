@@ -1,0 +1,40 @@
+{
+  "moduleId": "chart_of_nuclides",
+  "title": "Offline Chart of Nuclides — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "On the chart of nuclides, the horizontal axis is usually:",
+      "choices": [
+        "Neutron number N",
+        "Atomic mass in grams",
+        "Half-life in years",
+        "Binding energy only"
+      ],
+      "answer": 0,
+      "explain": "N across, Z vertical — each cell is one (Z, N) nuclide."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "α decay of U-238 first produces Th-____.",
+      "answer": "234",
+      "accept": [
+        "234",
+        "Th-234",
+        "Th234"
+      ],
+      "explain": "α removes 2p+2n: A → A−4, Z → Z−2 → ²³⁴Th."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "After U-238 → Th-234 (α), two β⁻ decays raise Z by 2 at fixed A. What is A of the resulting uranium isotope?",
+      "answer": 234,
+      "tolerance": 0,
+      "unit": "",
+      "explain": "β⁻ keeps A; two β⁻: Th-234 → Pa-234 → U-234."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "moduleId": "thermionic_emission",
+  "title": "Thermionic Emission — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Thermionic emission is best described as:",
+      "choices": [
+        "Electrons escaping a hot cathode after gaining enough thermal energy to overcome the work function",
+        "Electrons tunneling through an insulator at any temperature",
+        "Photons ejecting electrons from a cold metal surface",
+        "Electrons emitted only when the metal is negatively charged"
+      ],
+      "answer": 0,
+      "explain": "Heating the cathode lets the high-energy tail of the electron thermal distribution climb over the work function barrier W and leave the surface."
+    },
+    {
+      "id": "q2",
+      "type": "selection",
+      "prompt": "According to J = A T² e^(−W/k_BT), which change increases the saturated current density J the most?",
+      "choices": [
+        "Raising T (since W/k_BT sits in the exponent)",
+        "Raising W with T fixed",
+        "Lowering T with W fixed",
+        "None of these change J"
+      ],
+      "answer": 0,
+      "explain": "Because W/(k_BT) is in the exponent, J is extremely sensitive to T; raising W instead strongly suppresses emission."
+    },
+    {
+      "id": "q3",
+      "type": "blank",
+      "prompt": "At low anode voltage the diode current is limited by the electron cloud near the cathode repelling further emission — this regime is called ____-limited.",
+      "answer": "space-charge",
+      "accept": [
+        "space-charge",
+        "space charge",
+        "Child-Langmuir"
+      ],
+      "explain": "At low V the current follows the Child-Langmuir V^1.5 law (space-charge-limited); at high V it saturates at the Richardson value (temperature-limited)."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "Using A = 6.0×10⁵ A/(m²·K²), T = 2000 K, W = 4.5 eV, k_B = 1.380649×10⁻²³ J/K, and 1 eV = 1.602176634×10⁻¹⁹ J, estimate J = A T² e^(−W/k_BT) in A/m² (answer as a power of 10, e.g. enter the coefficient rounded to 1 decimal times 10^n as a decimal number).",
+      "answer": 11,
+      "tolerance": 5,
+      "unit": "A/m²",
+      "explain": "W/(k_BT) = (4.5·1.602e-19)/(1.38e-23·2000) ≈ 26.1, so J ≈ 6.0e5 · (2000)² · e^(−26.1) ≈ 11 A/m² — a small but nonzero saturated current density at this temperature and work function."
+    }
+  ]
+}

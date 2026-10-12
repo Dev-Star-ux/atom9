@@ -1,0 +1,39 @@
+{
+  "moduleId": "bb_features",
+  "title": "Features of Blackbody Radiation — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "As a blackbody gets hotter, its spectrum peak moves toward:",
+      "choices": [
+        "shorter wavelengths",
+        "longer wavelengths",
+        "zero intensity",
+        "only infrared forever"
+      ],
+      "answer": 0,
+      "explain": "Wien: hotter → blue-shifted peak."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Total radiated power ∝ T to the power ____ (Stefan–Boltzmann).",
+      "answer": "4",
+      "accept": [
+        "4",
+        "four"
+      ],
+      "explain": "P ∝ T⁴."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If T doubles, total power increases by what factor?",
+      "answer": 16,
+      "tolerance": 0.01,
+      "unit": "×",
+      "explain": "2⁴ = 16."
+    }
+  ]
+}

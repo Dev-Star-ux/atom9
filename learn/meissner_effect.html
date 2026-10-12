@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Meissner Effect — Learn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    .learn-doc { padding: 8px 6px 28px; max-width: 700px; }
+    h1 {
+      font-size: 1.4rem;
+      margin: 0 0 10px;
+      color: #0f172a;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    h2 {
+      font-size: 0.95rem;
+      margin: 22px 0 8px;
+      color: #0369a1;
+      font-weight: 700;
+    }
+    p { margin: 0 0 10px; color: #475569; }
+    .formula {
+      margin: 10px 0 14px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+      border: 1px solid #bae6fd;
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.98rem;
+      color: #0c4a6e;
+      white-space: pre-wrap;
+    }
+    .step {
+      padding: 12px 14px;
+      margin: 8px 0;
+      border-left: 3px solid #38bdf8;
+      background: #f8fafc;
+      border-radius: 0 12px 12px 0;
+      color: #334155;
+    }
+    .step strong { color: #0f172a; }
+    ul { margin: 6px 0 10px 18px; color: #475569; }
+    li { margin-bottom: 4px; }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <article class="learn-doc" data-module="meissner_effect">
+    <div class="tag">Experiment guide</div>
+    <h1>Meissner Effect</h1>
+    <p>Below T_c a Type-I superconductor actively expels an applied magnetic field from its bulk via persistent surface screening currents — perfect diamagnetism, not just zero resistance.</p>
+
+    <h2>1. Principle</h2>
+    <div class="step"><strong>Idea.</strong> A merely perfect conductor (zero resistance, no diamagnetism) would only "freeze" whatever field was already present when it became resistance-free — cooling it in a field would leave that field trapped inside. A real superconductor does something stronger: it actively pushes the field OUT of its interior as it crosses T_c, regardless of the field's history. This active expulsion is the Meissner effect, and it is what makes superconductivity a distinct thermodynamic phase rather than just "infinite conductivity." The field does not vanish abruptly at the surface — it decays smoothly over a characteristic length, the London penetration depth λ_L, as persistent surface screening currents build up to cancel the field inside.</div>
+
+    <h2>2. Key formulas</h2>
+    <div class="formula">B(x) = B_0\,e^{-x/\lambda_L}\quad (T<T_c)\qquad B(x)=B_0\quad (T\ge T_c)</div>
+    <ul>
+      <li>B(x): field magnitude at depth x below the surface. B_0: applied field at the surface. λ_L: London penetration depth (typically tens to hundreds of nm).</li>
+      <li>At x = λ_L, the field has dropped to B_0/e ≈ 37% of its surface value — the standard way to read a penetration depth off a decay curve.</li>
+      <li>Ask which quantity you control in the simulator (temperature, applied field, λ_L, hover height) and which you measure (surface field, decay curve, levitation force).</li>
+    </ul>
+
+    <h2>3. What to observe</h2>
+    <div class="step"><strong>In the sim.</strong> Below T_c the puck glows and field lines bow outward around it — none penetrate the interior — while a small magnet hovers and gently bobs above it (magnetic levitation from diamagnetic repulsion). Raise T above T_c and the glow disappears, field lines pass straight through, and the magnet settles directly onto the puck: no expulsion, no repulsion, no levitation.</div>
+
+    <h2>4. Step-by-step reasoning</h2>
+    <div class="step"><strong>Step A.</strong> Start from the physical picture: persistent, dissipationless surface currents that arise below T_c and generate a magnetization that exactly cancels the applied field in the bulk.</div>
+    <div class="step"><strong>Step B.</strong> Write the governing relation: <span class="formula" style="display:inline;padding:4px 8px;margin:0">B(x) = B_0\,e^{-x/\lambda_L}</span></div>
+    <div class="step"><strong>Step C.</strong> Change one control at a time (T, λ_L, B_0, hover height) in the experiment and predict the sign of the change — does the field decay faster or slower, does the magnet float higher or lower — before you look.</div>
+    <div class="step"><strong>Step D.</strong> Connect it to real demos: maglev trains use similar repulsion/attraction principles at engineering scale, and "quantum locking" (flux pinning in Type-II superconductors) lets a puck hover rigidly at a fixed height above a magnetic track — a close cousin of the Meissner levitation shown here.</div>
+
+    <h2>5. Check your understanding</h2>
+    <p>Open <strong>Exercises</strong> in the top bar for selection, fill-in, and calculation problems on this topic.</p>
+  </article>
+</body>
+</html>

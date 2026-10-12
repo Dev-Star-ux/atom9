@@ -1,0 +1,40 @@
+{
+  "moduleId": "xray_wave",
+  "title": "Wave Property of X-Rays — Bragg Diffraction — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Bragg's law for constructive reflection is:",
+      "choices": [
+        "nλ = 2d sin θ",
+        "nλ = d sin θ",
+        "λ = 2d cos θ",
+        "E = hf only"
+      ],
+      "answer": 0,
+      "explain": "Path difference 2d sinθ = nλ."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "In Bragg’s law, d is the ____ between crystal planes.",
+      "answer": "spacing",
+      "accept": [
+        "spacing",
+        "distance",
+        "separation"
+      ],
+      "explain": "Interplanar spacing."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "For n=1, λ=100 pm, d=200 pm, sin θ = λ/(2d). What is θ in degrees (nearest)?",
+      "answer": 14.5,
+      "tolerance": 0.5,
+      "unit": "°",
+      "explain": "sinθ = 0.25 ⇒ θ ≈ 14.5°."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "moduleId": "wave_beam",
+  "title": "Wave Beam — Matter-Wave Packet — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "A wave packet’s spatial width Δx and spread in k are linked by:",
+      "choices": [
+        "uncertainty / Fourier width",
+        "Bragg only",
+        "Stefan–Boltzmann",
+        "Ohm’s law"
+      ],
+      "answer": 0,
+      "explain": "Narrower packet ⇒ broader Δk."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Group velocity of a packet is roughly the particle’s ____.",
+      "answer": "velocity",
+      "accept": [
+        "velocity",
+        "speed",
+        "v"
+      ],
+      "explain": "v_g ≈ dω/dk ≈ p/m."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If Δx halves (minimum packet), Δk roughly becomes what factor?",
+      "answer": 2,
+      "tolerance": 0.2,
+      "unit": "×",
+      "explain": "Δk ∼ 1/Δx."
+    }
+  ]
+}

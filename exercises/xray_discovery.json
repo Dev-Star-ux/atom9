@@ -1,0 +1,40 @@
+{
+  "moduleId": "xray_discovery",
+  "title": "Discovery of X-Rays — Röntgen — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Röntgen discovered X-rays while studying:",
+      "choices": [
+        "cathode rays / discharge tubes",
+        "radioactivity of uranium only",
+        "NMR",
+        "only sunlight"
+      ],
+      "answer": 0,
+      "explain": "1895 cathode-ray experiments."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "X-rays are a form of ____ radiation.",
+      "answer": "electromagnetic",
+      "accept": [
+        "electromagnetic",
+        "EM",
+        "em"
+      ],
+      "explain": "High-energy EM waves/photons."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If tube voltage is 50 kV, max photon energy in keV is about?",
+      "answer": 50,
+      "tolerance": 1,
+      "unit": "keV",
+      "explain": "E_max ≈ eV_tube."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "moduleId": "prism_spectroscope",
+  "title": "Prism Spectroscope — Continuous vs Line Spectra — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "A prism spectroscope separates light by:",
+      "choices": [
+        "wavelength-dependent refraction",
+        "mass spectrometry",
+        "nuclear spin",
+        "only reflection"
+      ],
+      "answer": 0,
+      "explain": "Dispersion: n = n(λ)."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Violet light typically bends ____ than red in a glass prism.",
+      "answer": "more",
+      "accept": [
+        "more",
+        "stronger",
+        "greater"
+      ],
+      "explain": "Higher n for shorter λ."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If two lines are at 400 nm and 800 nm, the wavelength ratio (long/short) is?",
+      "answer": 2,
+      "tolerance": 0.01,
+      "unit": "",
+      "explain": "800/400 = 2."
+    }
+  ]
+}

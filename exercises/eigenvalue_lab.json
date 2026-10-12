@@ -1,0 +1,40 @@
+{
+  "moduleId": "eigenvalue_lab",
+  "title": "Eigenvalues & Eigenmodes — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "For Av=λv, v is an:",
+      "choices": [
+        "eigenvector",
+        "eigenvalue",
+        "determinant",
+        "trace only"
+      ],
+      "answer": 0,
+      "explain": "v is eigenvector, λ is eigenvalue."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "String fixed at both ends: mode n has wavelength λₙ = ____ L.",
+      "answer": "2/n",
+      "accept": [
+        "2L/n",
+        "2/n L",
+        "2L/n"
+      ],
+      "explain": "λₙ=2L/n."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "2×2 matrix [[2,0],[0,3]] has eigenvalues?",
+      "answer": 2,
+      "tolerance": 0,
+      "unit": "and 3",
+      "explain": "Diagonal ⇒ 2 and 3."
+    }
+  ]
+}

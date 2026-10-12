@@ -1,0 +1,39 @@
+{
+  "moduleId": "pde_visual",
+  "title": "Reaction–Diffusion Patterns — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Gray–Scott is a ____ system.",
+      "choices": [
+        "reaction–diffusion",
+        "only wave",
+        "only Laplace",
+        "algebraic"
+      ],
+      "answer": 0,
+      "explain": "Coupled u,v with diffusion and reaction."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Turing patterns arise from diffusion-driven ____ instability.",
+      "answer": "spatial",
+      "accept": [
+        "spatial",
+        "pattern"
+      ],
+      "explain": "Uniform state becomes unstable to spatial modes."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If F parameter increases feed rate (teaching), pattern activity generally?",
+      "answer": 0,
+      "tolerance": 0,
+      "unit": "",
+      "explain": "Selection: often more activity — teaching qualitative."
+    }
+  ]
+}

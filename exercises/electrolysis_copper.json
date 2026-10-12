@@ -1,0 +1,54 @@
+{
+  "moduleId": "electrolysis_copper",
+  "title": "Copper Sulfate Electrolysis — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "At the cathode of this copper electrorefining cell, the half-reaction is:",
+      "choices": [
+        "Cu²⁺ + 2e⁻ → Cu",
+        "Cu → Cu²⁺ + 2e⁻",
+        "2H₂O → O₂ + 4H⁺ + 4e⁻",
+        "Cu²⁺ → Cu³⁺ + e⁻"
+      ],
+      "answer": 0,
+      "explain": "Reduction happens at the cathode: Cu²⁺ ions gain two electrons and deposit as solid copper."
+    },
+    {
+      "id": "q2",
+      "type": "selection",
+      "prompt": "Why is the anode in this cell made of copper metal rather than an inert material?",
+      "choices": [
+        "So it dissolves (Cu → Cu²⁺ + 2e⁻), replenishing Cu²⁺ and keeping the bath concentration roughly constant",
+        "Because inert anodes are more expensive",
+        "So the anode gains mass instead of the cathode",
+        "It has no effect on the reaction — any conductor works identically"
+      ],
+      "answer": 0,
+      "explain": "A copper anode oxidizes and dissolves at the same rate copper deposits on the cathode, transferring copper from anode to cathode without depleting the solution — the basis of electrorefining/electroplating."
+    },
+    {
+      "id": "q3",
+      "type": "blank",
+      "prompt": "According to Faraday's law, the mass of copper deposited is directly proportional to ____ passed through the cell.",
+      "answer": "charge",
+      "accept": [
+        "charge",
+        "Q",
+        "the charge",
+        "current times time"
+      ],
+      "explain": "m = ItM/(zF): mass is proportional to charge Q = It, for fixed z, F, M."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "If I = 1.0 A flows for t = 965 s (z = 2, F = 96485 C/mol, M = 63.55 g/mol), what mass of copper (in grams) deposits at the cathode?",
+      "answer": 0.318,
+      "tolerance": 0.02,
+      "unit": "g",
+      "explain": "n = It/(zF) = (1.0×965)/(2×96485) ≈ 5.00×10⁻³ mol; m = nM ≈ 5.00×10⁻³ × 63.55 ≈ 0.318 g."
+    }
+  ]
+}

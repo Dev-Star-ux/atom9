@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Corona Discharge — Learn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    .learn-doc { padding: 8px 6px 28px; max-width: 700px; }
+    h1 {
+      font-size: 1.4rem;
+      margin: 0 0 10px;
+      color: #0f172a;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    h2 {
+      font-size: 0.95rem;
+      margin: 22px 0 8px;
+      color: #0369a1;
+      font-weight: 700;
+    }
+    p { margin: 0 0 10px; color: #475569; }
+    .formula {
+      margin: 10px 0 14px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+      border: 1px solid #bae6fd;
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.98rem;
+      color: #0c4a6e;
+      white-space: pre-wrap;
+    }
+    .step {
+      padding: 12px 14px;
+      margin: 8px 0;
+      border-left: 3px solid #38bdf8;
+      background: #f8fafc;
+      border-radius: 0 12px 12px 0;
+      color: #334155;
+    }
+    .step strong { color: #0f172a; }
+    ul { margin: 6px 0 10px 18px; color: #475569; }
+    li { margin-bottom: 4px; }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <article class="learn-doc" data-module="corona_discharge">
+    <div class="tag">Experiment guide</div>
+    <h1>Corona Discharge</h1>
+    <p>A localized, self-sustained ionization glow that forms right at a sharp point, thin wire, or sharp edge when the LOCAL field there exceeds threshold — even while the average field across the whole gap stays far below full-spark breakdown.</p>
+
+    <h2>1. Principle</h2>
+    <div class="step"><strong>Idea.</strong> Charge concentrates on regions of small radius of curvature — the sharper the point, the higher the local field for a given voltage. Near a fine needle or thin wire, the field can locally exceed the ionization threshold of air while the bulk of the gap remains far below breakdown. The result is a small halo of ionization confined to the tip, not a glow filling the gap and not a full arc. This is the SAME field-concentration idea used by lightning rods (which deliberately raise a small, controlled corona to bleed off charge) and by dust precipitators (which use a sharp emitting wire to ionize particles).</div>
+
+    <h2>2. Key formulas</h2>
+    <div class="formula">E_{onset} = 30\,\delta\left(1+\dfrac{0.301}{\sqrt{\delta r}}\right)</div>
+    <p>Peek's law: the onset field (kV/cm) at the surface of a conductor of radius r (cm) in air of relative density δ (δ = 1.0 at standard temperature/pressure; δ falls with altitude or with rising temperature). The actual field at the tip of a needle of radius r at voltage V (kV) with gap d (cm) to a grounded plane is approximated by E_tip ≈ V / [r·ln(2d/r)]. Corona ignites once E_tip ≥ E_onset.</p>
+    <ul>
+      <li>Identify each symbol in the formula and its unit.</li>
+      <li>Ask which quantity you control in the simulator, and which you measure.</li>
+    </ul>
+
+    <h2>3. What to observe</h2>
+    <div class="step"><strong>In the sim.</strong> A violet-blue halo with short branching streamer filaments appears only at the needle tip once E_tip crosses E_onset — the plane electrode and the rest of the gap stay dark. In the bottom plot, watch the rising E_tip(V) curve cross the flat E_onset line; that crossing is the corona onset voltage.</div>
+
+    <h2>4. Step-by-step reasoning</h2>
+    <div class="step"><strong>Step A.</strong> Start from the physical picture: field lines crowd together near a small-radius conductor, concentrating the field there far above the average field in the gap.</div>
+    <div class="step"><strong>Step B.</strong> Write the governing relation: <span class="formula" style="display:inline;padding:4px 8px;margin:0">E_{onset} = 30\delta(1+0.301/\sqrt{\delta r})</span></div>
+    <div class="step"><strong>Step C.</strong> Change one control at a time — shrink r, raise V, change δ (altitude) — and predict whether corona turns on before you look.</div>
+    <div class="step"><strong>Step D.</strong> Compare with real effects: power-line corona losses and audible hissing, the ozone smell near high-voltage equipment, and St. Elmo's fire on ship masts and aircraft wingtips in storms — all are the same localized point-discharge phenomenon.</div>
+
+    <h2>5. Check your understanding</h2>
+    <p>Open <strong>Exercises</strong> in the top bar for selection, fill-in, and calculation problems on this topic.</p>
+  </article>
+</body>
+</html>

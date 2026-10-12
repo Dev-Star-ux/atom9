@@ -1,0 +1,41 @@
+{
+  "moduleId": "lab_canvas",
+  "title": "Nuclear Lab Canvas — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "In the Lab Canvas, connecting a neutron source → U-235 target → detector is meant to demonstrate:",
+      "choices": [
+        "Induced fission and detection of products/neutrons",
+        "Only chemical bonding",
+        "Only photoelectric effect",
+        "Only sound waves"
+      ],
+      "answer": 0,
+      "explain": "Neutrons on fissile U-235 can induce fission; detectors count outgoing particles/energy."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "To reduce beam intensity before a detector, place ____ on the path.",
+      "answer": "shielding",
+      "accept": [
+        "shielding",
+        "shield",
+        "Shielding",
+        "a shield"
+      ],
+      "explain": "Shielding attenuates radiation between source and detector."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If a source emits 40 particles/s and a shield transmits 30%, about how many reach the detector per second (ideal, no other losses)?",
+      "answer": 12,
+      "tolerance": 0.5,
+      "unit": "/s",
+      "explain": "40 × 0.30 = 12 /s."
+    }
+  ]
+}

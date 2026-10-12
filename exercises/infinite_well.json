@@ -1,0 +1,40 @@
+{
+  "moduleId": "infinite_well",
+  "title": "Infinite Square Well — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Infinite square well energies are Eₙ ∝",
+      "choices": [
+        "n²",
+        "n",
+        "1/n",
+        "n³"
+      ],
+      "answer": 0,
+      "explain": "Eₙ = n² π² ħ² / (2 m L²)."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "ψ = 0 at the ____ of an infinite well.",
+      "answer": "walls",
+      "accept": [
+        "walls",
+        "boundaries",
+        "edges"
+      ],
+      "explain": "Boundary condition."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "E₂ / E₁ for the infinite well equals?",
+      "answer": 4,
+      "tolerance": 0.01,
+      "unit": "",
+      "explain": "(2/1)² = 4."
+    }
+  ]
+}

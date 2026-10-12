@@ -1,0 +1,40 @@
+{
+  "moduleId": "nuclear_reaction",
+  "title": "Nuclear Reaction Simulator — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "A thermal neutron on ²³⁵U can induce:",
+      "choices": [
+        "Fission (among other channels)",
+        "Only elastic scatter off electrons",
+        "Only pair production",
+        "Only β⁺ decay of the neutron"
+      ],
+      "answer": 0,
+      "explain": "²³⁵U is fissile — thermal n capture can lead to fission with ~200 MeV released."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "The Q-value is the energy from the ____ defect (converted with ≈931.5 MeV/u).",
+      "answer": "mass",
+      "accept": [
+        "mass",
+        "Mass",
+        "mass defect"
+      ],
+      "explain": "Q = (m_reactants − m_products)c²."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If Q = −1.88 MeV for ⁷Li(p,n)⁷Be, is E_lab = 1.0 MeV above threshold? Enter 0 for no, 1 for yes.",
+      "answer": 0,
+      "tolerance": 0,
+      "unit": "",
+      "explain": "Need E ≳ threshold (~1.88 MeV); 1.0 MeV is below — channel closed."
+    }
+  ]
+}

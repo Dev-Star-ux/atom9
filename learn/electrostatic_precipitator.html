@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Electrostatic Precipitator — Learn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    .learn-doc { padding: 8px 6px 28px; max-width: 700px; }
+    h1 {
+      font-size: 1.4rem;
+      margin: 0 0 10px;
+      color: #0f172a;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    h2 {
+      font-size: 0.95rem;
+      margin: 22px 0 8px;
+      color: #0369a1;
+      font-weight: 700;
+    }
+    p { margin: 0 0 10px; color: #475569; }
+    .formula {
+      margin: 10px 0 14px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+      border: 1px solid #bae6fd;
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.98rem;
+      color: #0c4a6e;
+      white-space: pre-wrap;
+    }
+    .step {
+      padding: 12px 14px;
+      margin: 8px 0;
+      border-left: 3px solid #38bdf8;
+      background: #f8fafc;
+      border-radius: 0 12px 12px 0;
+      color: #334155;
+    }
+    .step strong { color: #0f172a; }
+    ul { margin: 6px 0 10px 18px; color: #475569; }
+    li { margin-bottom: 4px; }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <article class="learn-doc" data-module="electrostatic_precipitator">
+    <div class="tag">Experiment guide</div>
+    <h1>Electrostatic Precipitator</h1>
+    <p>Dirty gas flows through a duct past a high-voltage corona wire and grounded collector plates: dust gets charged, drifts sideways, and sticks — cleaning the exhaust before it reaches the stack.</p>
+
+    <h2>1. Principle</h2>
+    <div class="step"><strong>Idea.</strong> Industrial flue gas from power plants, cement kilns, and smelters carries fine ash and dust. An electrostatic precipitator (ESP) removes it in three steps: (1) a thin wire at high voltage sustains a corona discharge, flooding the gas with ions; (2) passing dust particles are bombarded by these ions and pick up a charge roughly proportional to their surface area (∝ r²); (3) the strong electric field between the wire and the grounded plates pushes the charged particles sideways until they drift onto a plate and stick, while cleaned gas exits downstream. Periodically the plates are "rapped" (vibrated) to shake the collected dust into a hopper below.</div>
+
+    <h2>2. Key formulas</h2>
+    <div class="formula">E \approx V/d\quad\cdot\quad w = \dfrac{qE}{6\pi\mu r}\quad\cdot\quad \eta = 1 - e^{-wA/Q}</div>
+    <ul>
+      <li>E: field between wire and plate (V/m); V: applied voltage; d: wire-to-plate spacing.</li>
+      <li>w: drift (migration) velocity, from balancing the electric force qE against Stokes drag 6πμrv.</li>
+      <li>η: Deutsch-Anderson collection efficiency; A: total plate area; Q: volumetric gas flow rate.</li>
+      <li>Ask which quantity you control in the simulator, and which you measure.</li>
+    </ul>
+
+    <h2>3. What to observe</h2>
+    <div class="step"><strong>In the sim.</strong> Dust dots enter on the left, drift with the gas, and curve toward whichever plate is nearer — the curvature strength tracks the drift velocity w. Particles that reach a plate pile up there; the gas thins out (fewer dots) toward the exit as more dust is captured. The bottom plot shows collection efficiency η rising with particle radius r, with a marker at the current operating point.</div>
+
+    <h2>4. Step-by-step reasoning</h2>
+    <div class="step"><strong>Step A.</strong> Start from the physical picture: corona charging, electric drift, and plate collection, described above.</div>
+    <div class="step"><strong>Step B.</strong> Write the governing relation: <span class="formula" style="display:inline;padding:4px 8px;margin:0">E \approx V/d\quad\cdot\quad w = \dfrac{qE}{6\pi\mu r}\quad\cdot\quad \eta = 1 - e^{-wA/Q}</span></div>
+    <div class="step"><strong>Step C.</strong> Change one control at a time (voltage, particle size, gas velocity, plate spacing) and predict the sign of the change in η before you look.</div>
+    <div class="step"><strong>Step D.</strong> When an AI panel is present, collect data and compare the learned constant with the accepted value.</div>
+
+    <h2>5. Check your understanding</h2>
+    <p>Open <strong>Exercises</strong> in the top bar for selection, fill-in, and calculation problems on this topic.</p>
+  </article>
+</body>
+</html>

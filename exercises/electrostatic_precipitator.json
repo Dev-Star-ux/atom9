@@ -1,0 +1,54 @@
+{
+  "moduleId": "electrostatic_precipitator",
+  "title": "Electrostatic Precipitator — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Put the three steps of ESP operation in the correct order:",
+      "choices": [
+        "Corona charging → electric drift → plate collection",
+        "Plate collection → corona charging → electric drift",
+        "Electric drift → plate collection → corona charging",
+        "Corona charging → plate collection → electric drift"
+      ],
+      "answer": 0,
+      "explain": "Ions from the corona wire first charge the dust; the field then drifts charged particles sideways; they finally stick to a grounded plate."
+    },
+    {
+      "id": "q2",
+      "type": "selection",
+      "prompt": "In this teaching model (charge q ∝ r², drag ∝ r), are larger particles generally easier or harder to collect?",
+      "choices": [
+        "Easier — charge grows as r² but drag only as r, so drift velocity w ∝ r increases with size",
+        "Harder — larger particles always fall out of the field region",
+        "No difference — w is independent of r",
+        "Harder — larger particles cannot be charged at all"
+      ],
+      "answer": 0,
+      "explain": "w = qE/(6πμr) with q ∝ r² gives w ∝ r, so bigger particles drift faster and are collected more easily in this model (very fine particles are the hardest to catch)."
+    },
+    {
+      "id": "q3",
+      "type": "blank",
+      "prompt": "As applied voltage increases (with everything else fixed), collection efficiency η ____ (increases/decreases).",
+      "answer": "increases",
+      "accept": [
+        "increases",
+        "increase",
+        "goes up",
+        "rises"
+      ],
+      "explain": "Higher voltage raises E, which raises drift velocity w, which raises η = 1 − e^(−wA/Q)."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "Using the Deutsch-Anderson equation η = 1 − e^(−wA/Q), find η for w = 0.08 m/s, A = 4 m², Q = 0.5 m³/s.",
+      "answer": 0.48,
+      "tolerance": 0.03,
+      "unit": "",
+      "explain": "wA/Q = 0.08×4/0.5 = 0.64; η = 1 − e^(−0.64) ≈ 1 − 0.527 ≈ 0.473."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "moduleId": "spherical_harmonics",
+  "title": "Spherical Harmonics Yₗᵐ — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Y_l^m are eigenfunctions of:",
+      "choices": [
+        "angular momentum operators",
+        "only radial r",
+        "time translation only",
+        "mass matrix"
+      ],
+      "answer": 0,
+      "explain": "L² and L_z on sphere."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "For given l, m ranges from −l to ____.",
+      "answer": "l",
+      "accept": [
+        "l",
+        "+l"
+      ],
+      "explain": "m=-l,…,l."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "How many m values for l=2?",
+      "answer": 5,
+      "tolerance": 0,
+      "unit": "",
+      "explain": "2l+1=5."
+    }
+  ]
+}

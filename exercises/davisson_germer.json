@@ -1,0 +1,39 @@
+{
+  "moduleId": "davisson_germer",
+  "title": "Davisson–Germer — Electron Diffraction — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Davisson–Germer proved electrons have:",
+      "choices": [
+        "wave nature (diffraction)",
+        "only charge",
+        "zero mass",
+        "no momentum"
+      ],
+      "answer": 0,
+      "explain": "Electron diffraction from Ni crystal."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "For electrons accelerated by V, λ = h / √(2m e ____).",
+      "answer": "V",
+      "accept": [
+        "V",
+        "voltage"
+      ],
+      "explain": "p = √(2meV)."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "Classic peak near V = 54 V appears near θ ≈ how many degrees (order 50)?",
+      "answer": 50,
+      "tolerance": 5,
+      "unit": "°",
+      "explain": "Historical peak ~50° at ~54 V."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "moduleId": "compton",
+  "title": "Compton Effect — Photon Momentum — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Compton shift Δλ depends on:",
+      "choices": [
+        "scattering angle",
+        "only intensity",
+        "only slit width",
+        "temperature only"
+      ],
+      "answer": 0,
+      "explain": "Δλ = λ_C (1 − cos θ)."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Compton wavelength λ_C = h / (m_e ____).",
+      "answer": "c",
+      "accept": [
+        "c",
+        "C"
+      ],
+      "explain": "λ_C = h/(m_e c)."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "At θ = 90°, (1 − cos θ) = ?",
+      "answer": 1,
+      "tolerance": 0.01,
+      "unit": "",
+      "explain": "cos 90° = 0 ⇒ 1 − 0 = 1."
+    }
+  ]
+}

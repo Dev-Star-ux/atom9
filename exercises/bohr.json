@@ -1,0 +1,39 @@
+{
+  "moduleId": "bohr",
+  "title": "Bohr's Atomic Model — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Bohr postulated angular momentum quantization L =",
+      "choices": [
+        "nħ",
+        "n h",
+        "only mvr = 0",
+        "∞"
+      ],
+      "answer": 0,
+      "explain": "L = nħ = nh/(2π)."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Hydrogen level energies scale as Eₙ ∝ −1/n____.",
+      "answer": "2",
+      "accept": [
+        "2",
+        "^2"
+      ],
+      "explain": "Eₙ = −13.6/n² eV."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "Ground-state energy of H is −13.6 eV. For n=2, E in eV is?",
+      "answer": -3.4,
+      "tolerance": 0.05,
+      "unit": "eV",
+      "explain": "−13.6/4 = −3.4 eV."
+    }
+  ]
+}

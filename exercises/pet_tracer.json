@@ -1,0 +1,39 @@
+{
+  "moduleId": "pet_tracer",
+  "title": "PET / Medical Tracer — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "PET imaging uses coincidence detection of:",
+      "choices": [
+        "511 keV gamma pairs from annihilation",
+        "alpha particles only",
+        "visible light",
+        "radio waves"
+      ],
+      "answer": 0,
+      "explain": "β⁺ annihilates with e⁻ → two 511 keV γ back-to-back."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Tracer activity falls as A(t) = A₀ e^(−____ t).",
+      "answer": "λ",
+      "accept": [
+        "λ",
+        "lambda"
+      ],
+      "explain": "Same exponential law as other decays."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "F-18 T½ ≈ 110 min. After 110 min, fraction remaining?",
+      "answer": 0.5,
+      "tolerance": 0.02,
+      "unit": "",
+      "explain": "One half-life → 50%."
+    }
+  ]
+}

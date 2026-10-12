@@ -1,0 +1,41 @@
+{
+  "moduleId": "cloud_chamber",
+  "title": "Cloud Chamber — Alpha Tracks — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "A cloud chamber makes ionizing tracks visible as:",
+      "choices": [
+        "condensation trails",
+        "X-ray shadows",
+        "sound waves",
+        "magnetic domains"
+      ],
+      "answer": 0,
+      "explain": "Supersaturated vapor condenses along ion trails."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Charged particles leave ____ trails in a cloud chamber.",
+      "answer": "ionization",
+      "accept": [
+        "ionization",
+        "ion",
+        "ionising",
+        "ionizing"
+      ],
+      "explain": "Ions seed droplet formation."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If a particle creates 1000 ion pairs/cm and travels 5 cm, how many ion pairs (order of magnitude count)?",
+      "answer": 5000,
+      "tolerance": 1,
+      "unit": "",
+      "explain": "1000 × 5 = 5000."
+    }
+  ]
+}

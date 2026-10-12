@@ -1,0 +1,39 @@
+{
+  "moduleId": "nuclear_reactor",
+  "title": "Nuclear Reactor — How a PWR Makes Electricity — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "In a PWR, inserting control rods deeper primarily:",
+      "choices": [
+        "Absorbs neutrons and lowers fission power",
+        "Increases coolant pressure only",
+        "Speeds up the turbine directly",
+        "Removes the steam generator"
+      ],
+      "answer": 0,
+      "explain": "Control rods are neutron absorbers; more insertion → lower reactivity → lower power."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Primary and secondary loops exchange heat in the ____ generator.",
+      "answer": "steam",
+      "accept": [
+        "steam",
+        "Steam"
+      ],
+      "explain": "Steam generator: heat exchanger; fluids do not mix."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If P_th = 900 MW and η = 0.33, P_e ≈ ? MW",
+      "answer": 297,
+      "tolerance": 5,
+      "unit": "MW",
+      "explain": "P_e = 0.33 × 900 = 297 MW."
+    }
+  ]
+}

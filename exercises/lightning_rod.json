@@ -1,0 +1,54 @@
+{
+  "moduleId": "lightning_rod",
+  "title": "Lightning Rod (Franklin Rod) — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "A grounded lightning rod protects a structure by:",
+      "choices": [
+        "Concentrating field to reduce local strike risk, and giving strikes a safe low-impedance path to ground",
+        "Repelling lightning away from the whole area electrostatically",
+        "Absorbing the strike energy permanently inside the rod",
+        "Preventing thunderclouds from forming overhead"
+      ],
+      "answer": 0,
+      "explain": "The sharp point's field concentration can bleed off charge (mild corona) and reduce the chance a strike starts right at the structure; more importantly, the grounded rod offers the preferred attachment point and conducts the current safely to earth."
+    },
+    {
+      "id": "q2",
+      "type": "selection",
+      "prompt": "The rolling-sphere method estimates protection by imagining:",
+      "choices": [
+        "A sphere of radius equal to the striking distance rolled over the structure and ground; anywhere it can't touch without first touching the rod tip is protected",
+        "A sphere of fixed 1 m radius centered on the rod base",
+        "A cone of fixed 45° angle below the rod tip, independent of stroke current",
+        "The rod's own physical radius defining the protected zone"
+      ],
+      "answer": 0,
+      "explain": "The rolling sphere's radius is the striking distance r_s, which depends on the prospective stroke current; the sphere's motion traces the boundary of the protected zone."
+    },
+    {
+      "id": "q3",
+      "type": "blank",
+      "prompt": "For a fixed striking distance r_s, increasing the rod height h makes the protection radius R_p ____ (increase/decrease), until h ≥ r_s where the geometry saturates.",
+      "answer": "increase",
+      "accept": [
+        "increase",
+        "increases",
+        "larger",
+        "grow"
+      ],
+      "explain": "R_p = sqrt(r_s² − (r_s − h)²) grows monotonically with h for h ≤ r_s, then simplifies to R_p ≈ r_s once h ≥ r_s."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "Using r_s = 10·I^0.65 (I in kA, r_s in m), estimate the striking distance for a prospective stroke current I = 10 kA.",
+      "answer": 44.7,
+      "tolerance": 2,
+      "unit": "m",
+      "explain": "r_s = 10 · 10^0.65 ≈ 10 · 4.47 ≈ 44.7 m."
+    }
+  ]
+}

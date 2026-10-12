@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Photomultiplier Tube — Learn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    .learn-doc { padding: 8px 6px 28px; max-width: 700px; }
+    h1 {
+      font-size: 1.4rem;
+      margin: 0 0 10px;
+      color: #0f172a;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    h2 {
+      font-size: 0.95rem;
+      margin: 22px 0 8px;
+      color: #0369a1;
+      font-weight: 700;
+    }
+    p { margin: 0 0 10px; color: #475569; }
+    .formula {
+      margin: 10px 0 14px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+      border: 1px solid #bae6fd;
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.98rem;
+      color: #0c4a6e;
+      white-space: pre-wrap;
+    }
+    .step {
+      padding: 12px 14px;
+      margin: 8px 0;
+      border-left: 3px solid #38bdf8;
+      background: #f8fafc;
+      border-radius: 0 12px 12px 0;
+      color: #334155;
+    }
+    .step strong { color: #0f172a; }
+    ul { margin: 6px 0 10px 18px; color: #475569; }
+    li { margin-bottom: 4px; }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <article class="learn-doc" data-module="photomultiplier_tube">
+    <div class="tag">Experiment guide</div>
+    <h1>Photomultiplier Tube</h1>
+    <p>Incident photons eject photoelectrons at a photocathode; a dynode chain multiplies the electron cloud stage by stage until a huge, easily-measured current arrives at the anode.</p>
+
+    <h2>1. Principle</h2>
+    <div class="step"><strong>Idea.</strong> Light striking the photocathode releases photoelectrons via the photoelectric effect — the photocurrent is proportional to the incident photon rate (intensity × quantum efficiency). Each photoelectron is accelerated toward the first dynode and, on impact, knocks out several secondary electrons (yield δ per stage). That larger cloud is accelerated to the next dynode, and the process repeats through the whole chain, multiplying the electron count at every stage before the amplified charge is collected at the anode.</div>
+
+    <h2>2. Key formulas</h2>
+    <div class="formula">G = \delta^n\quad\cdot\quad I_{out} = I_{cathode}\cdot G</div>
+    <ul>
+      <li>δ = secondary emission yield per dynode stage (grows with the inter-dynode accelerating voltage).</li>
+      <li>n = number of dynode stages in the chain.</li>
+      <li>G = total gain; I_cathode = photoelectron current leaving the photocathode; I_out = amplified anode current.</li>
+    </ul>
+
+    <h2>3. What to observe</h2>
+    <div class="step"><strong>In the sim.</strong> Photon dots strike the photocathode on the left; the resulting electron cloud visibly doubles/multiplies after each dynode plate as it cascades toward the anode on the right, where a bright burst marks the amplified output pulse. The bottom plot shows gain G rising steeply (note the log y-axis) as the number of dynode stages n increases, with a marker at the current n.</div>
+
+    <h2>4. Step-by-step reasoning</h2>
+    <div class="step"><strong>Step A.</strong> Start from the physical picture: photon → photoelectron → cascading secondary emission through the dynode chain → collected anode current.</div>
+    <div class="step"><strong>Step B.</strong> Write the governing relation: <span class="formula" style="display:inline;padding:4px 8px;margin:0">G = \delta^n\quad\cdot\quad I_{out} = I_{cathode}\cdot G</span></div>
+    <div class="step"><strong>Step C.</strong> Change one control at a time — raise the inter-dynode voltage (δ increases) or add dynode stages (n increases) — and predict how much the gain will jump before you look, since the growth is exponential, not linear.</div>
+    <div class="step"><strong>Step D.</strong> Notice why this exponential amplification is what lets a PMT register a single incoming photon as a distinct, measurable current pulse — the basis of photon counting.</div>
+
+    <h2>5. Applications</h2>
+    <div class="step"><strong>Scintillation detectors.</strong> A scintillator crystal converts absorbed radiation into a faint flash of light; the PMT behind it amplifies that flash into a countable electrical pulse, the core of most gamma spectrometers and radiation counters.</div>
+    <div class="step"><strong>Low-light imaging.</strong> PMTs are used wherever extremely faint light must be detected reliably, such as in fluorescence microscopy, astronomical photometry, and particle-physics Cherenkov detectors.</div>
+
+    <h2>6. Check your understanding</h2>
+    <p>Open <strong>Exercises</strong> in the top bar for selection, fill-in, and calculation problems on this topic.</p>
+  </article>
+</body>
+</html>

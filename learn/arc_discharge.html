@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Electric Arc Discharge — Learn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    .learn-doc { padding: 8px 6px 28px; max-width: 700px; }
+    h1 {
+      font-size: 1.4rem;
+      margin: 0 0 10px;
+      color: #0f172a;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    h2 {
+      font-size: 0.95rem;
+      margin: 22px 0 8px;
+      color: #0369a1;
+      font-weight: 700;
+    }
+    p { margin: 0 0 10px; color: #475569; }
+    .formula {
+      margin: 10px 0 14px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+      border: 1px solid #bae6fd;
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.98rem;
+      color: #0c4a6e;
+      white-space: pre-wrap;
+    }
+    .step {
+      padding: 12px 14px;
+      margin: 8px 0;
+      border-left: 3px solid #38bdf8;
+      background: #f8fafc;
+      border-radius: 0 12px 12px 0;
+      color: #334155;
+    }
+    .step strong { color: #0f172a; }
+    ul { margin: 6px 0 10px 18px; color: #475569; }
+    li { margin-bottom: 4px; }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <article class="learn-doc" data-module="arc_discharge">
+    <div class="tag">Experiment guide</div>
+    <h1>Electric Arc Discharge</h1>
+    <p>A high-current, low-voltage, thermally-sustained gas discharge — the hot cathode spot keeps emitting electrons, so the ionized channel between the electrodes carries very high current at comparatively low voltage. Very bright, very hot: welding arcs, arc lamps, arc furnaces.</p>
+
+    <h2>1. Principle</h2>
+    <div class="step"><strong>Idea.</strong> Unlike a glow discharge (which needs a large cathode-fall voltage to keep pulling electrons off a cold cathode), an arc's cathode spot is heated hot enough for thermionic emission to supply electrons freely. That lets current climb into the tens or hundreds of amps while voltage stays modest — and, distinctively, arc voltage actually FALLS as current rises (over the normal operating range): a negative differential resistance. This is captured by a teaching form of Ayrton's 1901 empirical arc equation.</div>
+
+    <h2>2. Key formulas</h2>
+    <div class="formula">V = a + \dfrac{b}{I} + \left(c + \dfrac{d}{I}\right)L</div>
+    <ul>
+      <li>I = arc current (A), L = arc gap length (cm); a, b, c, d are illustrative teaching constants (volts/amps/cm units), not measured data for a specific material or gas.</li>
+      <li>Arc power P = V·I — because I is large even though V is modest, P is very high, which is exactly why arcs melt metal and produce intense light.</li>
+    </ul>
+
+    <h2>3. Why arcs need a ballast (current-limiting element)</h2>
+    <div class="step"><strong>Runaway risk.</strong> Because dV/dI &lt; 0, an arc connected directly to a voltage source with no series limiting impedance is unstable: any small rise in current lowers the arc's voltage requirement, leaving more of the source voltage to drive even more current — which lowers the arc voltage further, and so on, until something (the supply, the electrodes) fails. A series ballast resistor, reactor, or an electronically current-limited power supply pins the current to a safe operating point where the source's falling load line intersects the arc's falling V–I curve at a stable point.</div>
+
+    <h2>4. Applications</h2>
+    <ul>
+      <li><strong>Arc welding</strong> — the arc's concentrated heat melts the base metal and filler rod.</li>
+      <li><strong>Arc lamps</strong> — very bright, broad-spectrum light from the hot channel and electrode tips (historically carbon-arc lamps, spotlight/projector arc lamps).</li>
+      <li><strong>Arc furnaces</strong> — industrial melting of metal (e.g. steelmaking) using the very high power density of the arc.</li>
+    </ul>
+
+    <h2>5. What to observe</h2>
+    <div class="step"><strong>In the sim.</strong> Raise current I and watch the arc voltage V fall while the channel gets brighter and thicker (power P = VI still rises). Increase the gap length L and watch V rise for a given I. The lower panel traces the falling V–I characteristic for the current gap, with a marker at the operating point.</div>
+
+    <h2>6. Step-by-step reasoning</h2>
+    <div class="step"><strong>Step A.</strong> Start from the physical picture: a thermionic-cathode-sustained, fully ionized channel between two electrodes.</div>
+    <div class="step"><strong>Step B.</strong> Write the governing relation: <span class="formula" style="display:inline;padding:4px 8px;margin:0">V = a + \dfrac{b}{I} + \left(c + \dfrac{d}{I}\right)L</span></div>
+    <div class="step"><strong>Step C.</strong> Change I or L one at a time in the experiment and predict the sign of the change in V before you look — remember dV/dI &lt; 0.</div>
+    <div class="step"><strong>Step D.</strong> Ask why a bare arc across a fixed-voltage supply is unstable without a ballast, and what stabilizes the operating point.</div>
+
+    <h2>7. Check your understanding</h2>
+    <p>Open <strong>Exercises</strong> in the top bar for selection, fill-in, and calculation problems on this topic.</p>
+  </article>
+</body>
+</html>

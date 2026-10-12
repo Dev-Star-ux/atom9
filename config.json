@@ -1,0 +1,18 @@
+{
+  "language": "en",
+  "fontFamily": "",
+  "fontSize": 16,
+  "activeModule": "atomic_bomb",
+  "sidebarCollapsed": false,
+  "exercisesEnabled": false,
+  "problemEditorEnabled": false,
+  "showPrinciple": false,
+  "showAiPanel": false,
+  "showKeyIdeas": false,
+  "fabPos": null,
+  "panelCollapsed": false,
+  "panelWidth": 492,
+  "hiddenModules": {},
+  "exportEnabled": true,
+  "childProject": false
+}

@@ -1,0 +1,53 @@
+{
+  "moduleId": "electrostatic_shielding",
+  "title": "Electrostatic Shielding — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Why is the field inside a hollow conductor placed in an external electric field exactly zero in electrostatic equilibrium?",
+      "choices": [
+        "Free charges redistribute on the conductor's surface until their field cancels the external field inside",
+        "The conductor absorbs the field lines and converts them to heat",
+        "Electric fields cannot exist near any solid object",
+        "The interior is always grounded to zero potential"
+      ],
+      "answer": 0,
+      "explain": "Mobile free charges move to the surface and rearrange until the net field inside the conductor (and any cavity it encloses) is zero — that is what 'electrostatic equilibrium' means."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "For a conducting mesh cage, shielding gets ____ (better/worse) as the hole size relative to the cage grows larger.",
+      "answer": "worse",
+      "accept": [
+        "worse",
+        "less effective",
+        "weaker"
+      ],
+      "explain": "Larger gaps let more of the external field leak through, so the shielding factor S drops and the interior field rises."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "Why doesn't an insulating enclosure shield its interior from an external electric field?",
+      "choices": [
+        "It has no free charges that can redistribute to cancel the field",
+        "It amplifies the external field instead of blocking it",
+        "Insulators are always thinner than conductors",
+        "Electric fields cannot pass through any material, including insulators"
+      ],
+      "answer": 0,
+      "explain": "Shielding relies on mobile free charges rearranging on a conductor's surface; an insulator's charges are bound and cannot move to cancel the interior field, so the external field passes through essentially undisturbed."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "If the external field is E₀ = 10 kV/m and the interior field measured is E_in = 0.1 kV/m, what is the shielding effectiveness SE = 20·log₁₀(E₀/E_in) in dB?",
+      "answer": 40,
+      "tolerance": 1,
+      "unit": "dB",
+      "explain": "E₀/E_in = 100, and 20·log₁₀(100) = 40 dB."
+    }
+  ]
+}

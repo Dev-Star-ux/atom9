@@ -1,0 +1,53 @@
+{
+  "moduleId": "nai_spectrometer",
+  "title": "NaI(Tl) Gamma Spectrometer — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "The photopeak corresponds to:",
+      "choices": [
+        "full absorption of the γ energy in the crystal",
+        "only Compton scatter with escape",
+        "PMT dark noise",
+        "α particle tracks"
+      ],
+      "answer": 0,
+      "explain": "Photoelectric (or multiple events that sum) deposits the full γ energy → photopeak."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Energy resolution is often quoted as R = FWHM / ____.",
+      "answer": "E",
+      "accept": [
+        "E",
+        "energy",
+        "peak energy"
+      ],
+      "explain": "R = FWHM/E; often given in % at 662 keV for NaI."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "The Compton edge is:",
+      "choices": [
+        "the maximum energy a recoil electron can get in one scatter",
+        "the photopeak centroid",
+        "the PMT gain",
+        "always at 511 keV"
+      ],
+      "answer": 0,
+      "explain": "E_C = E·2α/(1+2α); continuum ends near this energy."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "If FWHM = 46 keV at E = 662 keV, R in percent is about?",
+      "answer": 7,
+      "tolerance": 0.5,
+      "unit": "%",
+      "explain": "100×46/662 ≈ 7%."
+    }
+  ]
+}

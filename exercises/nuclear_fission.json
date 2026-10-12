@@ -1,0 +1,40 @@
+{
+  "moduleId": "nuclear_fission",
+  "title": "Nuclear Fission — Chain Reaction — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "If k > 1, the chain reaction typically:",
+      "choices": [
+        "Grows (supercritical)",
+        "Dies out immediately",
+        "Stops producing neutrons",
+        "Requires zero enrichment"
+      ],
+      "answer": 0,
+      "explain": "k > 1 → each generation grows."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "The fissile isotope that usually splits is U-____.",
+      "answer": "235",
+      "accept": [
+        "235",
+        "U-235",
+        "U235"
+      ],
+      "explain": "U-235 is fissile with slow neutrons."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If 1000 neutrons become 1200 next generation, k =?",
+      "answer": 1.2,
+      "tolerance": 0.01,
+      "unit": "",
+      "explain": "1200/1000 = 1.2."
+    }
+  ]
+}

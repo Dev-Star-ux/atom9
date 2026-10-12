@@ -1,0 +1,52 @@
+{
+  "moduleId": "alpha_spectroscopy",
+  "title": "Si Detector α Spectroscopy — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "α spectroscopy with a Si detector is best done in:",
+      "choices": [
+        "vacuum (or very short path)",
+        "thick air at STP",
+        "water",
+        "lead shielding only"
+      ],
+      "answer": 0,
+      "explain": "Air causes energy loss and straggling that smear and shift α peaks."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Am-241’s main α line is about 5.486 ____.",
+      "answer": "MeV",
+      "accept": [
+        "MeV",
+        "mev"
+      ],
+      "explain": "Alpha energies are typically several MeV."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "Increasing air thickness between source and detector mainly:",
+      "choices": [
+        "shifts peaks down and broadens them",
+        "makes peaks sharper",
+        "creates 511 keV peaks",
+        "stops all betas only"
+      ],
+      "answer": 0,
+      "explain": "dE/dx loss + straggling → lower centroid and larger FWHM."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "If FWHM = 20 keV at E = 5.486 MeV, R in percent is about?",
+      "answer": 0.36,
+      "tolerance": 0.05,
+      "unit": "%",
+      "explain": "100×0.020/5.486 ≈ 0.36%."
+    }
+  ]
+}

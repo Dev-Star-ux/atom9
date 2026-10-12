@@ -1,0 +1,41 @@
+{
+  "moduleId": "quantum_theory",
+  "title": "Quantum Theory — Photons & the Photoelectric Effect — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Quantum theory of light treats light as:",
+      "choices": [
+        "photons of energy hf",
+        "only continuous fields",
+        "sound phonons",
+        "massive electrons"
+      ],
+      "answer": 0,
+      "explain": "Einstein/Planck picture: discrete quanta."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Photon energy is proportional to ____.",
+      "answer": "frequency",
+      "accept": [
+        "frequency",
+        "f",
+        "ν",
+        "nu"
+      ],
+      "explain": "E = hf."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "How many photons of 2 eV equal 10 eV total energy?",
+      "answer": 5,
+      "tolerance": 0.01,
+      "unit": "",
+      "explain": "10/2 = 5."
+    }
+  ]
+}

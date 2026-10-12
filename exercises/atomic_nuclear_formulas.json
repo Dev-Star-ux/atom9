@@ -1,0 +1,40 @@
+{
+  "moduleId": "atomic_nuclear_formulas",
+  "title": "Atomic & Nuclear Formulas — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Binding energy of a nucleus is most directly related to:",
+      "choices": [
+        "mass defect × c²",
+        "only the proton charge",
+        "room temperature",
+        "Avogadro’s number alone"
+      ],
+      "answer": 0,
+      "explain": "B = Δm c² from the mass defect relative to free nucleons."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "The radioactive decay law is N(t) = N₀ e^(−____ t).",
+      "answer": "λ",
+      "accept": [
+        "λ",
+        "lambda",
+        "Λ"
+      ],
+      "explain": "λ is the decay constant; T½ = ln2/λ."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If T½ = 2.0 h, what is λ in h⁻¹? (ln2 ≈ 0.693)",
+      "answer": 0.3465,
+      "tolerance": 0.01,
+      "unit": "h⁻¹",
+      "explain": "λ = ln2 / T½ = 0.693/2 ≈ 0.3465 h⁻¹."
+    }
+  ]
+}

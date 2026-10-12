@@ -1,0 +1,40 @@
+{
+  "moduleId": "uncertainty_xp",
+  "title": "Heisenberg Uncertainty — Position & Momentum — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Heisenberg: Δx Δp ≥",
+      "choices": [
+        "ħ/2",
+        "h",
+        "0",
+        "mc"
+      ],
+      "answer": 0,
+      "explain": "Δx Δp ≥ ħ/2."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "More precise position means ____ precise momentum.",
+      "answer": "less",
+      "accept": [
+        "less",
+        "worse",
+        "lower"
+      ],
+      "explain": "Trade-off in the product."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If Δx = 1×10⁻¹⁰ m and ħ/2 ≈ 5×10⁻³⁵, minimum Δp (order) in kg·m/s is about 5×10^?",
+      "answer": -25,
+      "tolerance": 1,
+      "unit": "(exponent)",
+      "explain": "Δp ≥ (ħ/2)/Δx ≈ 5×10⁻²⁵."
+    }
+  ]
+}

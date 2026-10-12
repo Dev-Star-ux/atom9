@@ -1,0 +1,54 @@
+{
+  "moduleId": "electrospray_spinning",
+  "title": "Electrostatic Spraying and Spinning — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Above the onset voltage, what mainly determines whether a liquid electrosprays (fine droplets) or electrospins (a continuous fiber)?",
+      "choices": [
+        "The liquid's viscosity",
+        "The color of the liquid",
+        "The room temperature only",
+        "The shape of the collector plate"
+      ],
+      "answer": 0,
+      "explain": "Low-viscosity liquids cannot sustain a continuous jet and break into droplets (electrospray); high-viscosity polymer solutions resist breakup and instead whip into a continuous nanofiber (electrospinning)."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "A charged droplet breaks apart (fissions) into smaller droplets once its charge exceeds the ____ limit, at which Coulomb repulsion overcomes surface tension.",
+      "answer": "Rayleigh",
+      "accept": [
+        "Rayleigh",
+        "rayleigh",
+        "Rayleigh charge",
+        "Rayleigh limit"
+      ],
+      "explain": "This is the Rayleigh limit, q_R = 8π√(ε₀γR³)."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "Why does electrospinning produce a continuous fiber instead of separate droplets?",
+      "choices": [
+        "High viscosity resists the jet breaking apart, so it instead stretches and thins under a whipping/bending instability",
+        "The voltage is too low to charge the liquid",
+        "The collector repels the liquid",
+        "Surface tension is zero in polymer solutions"
+      ],
+      "answer": 0,
+      "explain": "Viscoelastic resistance keeps the jet intact; the whipping instability stretches and thins it into a long nanofiber rather than letting it fragment into droplets."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "A droplet has radius R = 5 µm and surface tension γ = 72 mN/m (0.072 N/m). Using q_R = 8π√(ε₀γR³) with ε₀ = 8.854×10⁻¹² F/m, estimate q_R in coulombs (×10⁻¹²).",
+      "answer": 0.22,
+      "tolerance": 0.05,
+      "unit": "×10⁻¹² C",
+      "explain": "R³ = (5×10⁻⁶)³ = 1.25×10⁻¹⁶ m³. ε₀γR³ ≈ 8.854e-12 × 0.072 × 1.25e-16 ≈ 7.97e-29. √(...) ≈ 8.9×10⁻¹⁵. q_R = 8π × 8.9×10⁻¹⁵ ≈ 2.2×10⁻¹³ C ≈ 0.22×10⁻¹² C."
+    }
+  ]
+}

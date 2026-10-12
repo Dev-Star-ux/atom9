@@ -1,0 +1,39 @@
+{
+  "moduleId": "wave_theory",
+  "title": "Wave Theory vs Photoelectric Effect — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Classical wave theory of light wrongly predicts photoelectric KE depends on:",
+      "choices": [
+        "intensity (not frequency)",
+        "only frequency",
+        "only Planck’s h",
+        "nuclear charge"
+      ],
+      "answer": 0,
+      "explain": "Waves dump continuous energy; quantum needs hf."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "In wave theory, brighter light means larger wave ____.",
+      "answer": "amplitude",
+      "accept": [
+        "amplitude",
+        "A"
+      ],
+      "explain": "Intensity ∝ amplitude²."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If intensity doubles and area is fixed, power through that area becomes what factor?",
+      "answer": 2,
+      "tolerance": 0.01,
+      "unit": "×",
+      "explain": "P ∝ I."
+    }
+  ]
+}

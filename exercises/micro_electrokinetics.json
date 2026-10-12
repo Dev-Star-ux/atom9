@@ -1,0 +1,54 @@
+{
+  "moduleId": "micro_electrokinetics",
+  "title": "Micro-Electrokinetic Systems — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "What is the key physical difference between electrophoresis and electroosmosis?",
+      "choices": [
+        "Electrophoresis moves the charged particle itself; electroosmosis moves the bulk fluid via the wall's double layer",
+        "Electrophoresis moves the fluid; electroosmosis moves the particle",
+        "They are identical phenomena with different names",
+        "Electroosmosis only works with neutral particles and no field"
+      ],
+      "answer": 0,
+      "explain": "In electrophoresis, the field acts on the particle's own charge in a stationary fluid. In electroosmosis, the field acts on mobile ions in the electric double layer at a charged wall, dragging the bulk fluid — which then carries any suspended particles, even neutral ones."
+    },
+    {
+      "id": "q2",
+      "type": "selection",
+      "prompt": "What determines whether a particle experiences positive or negative dielectrophoresis (DEP)?",
+      "choices": [
+        "The sign of the Clausius–Mossotti factor (particle vs. medium polarizability)",
+        "The sign of the particle's net electric charge",
+        "The direction of the applied field only",
+        "The color of the particle"
+      ],
+      "answer": 0,
+      "explain": "DEP does not require the particle to carry net charge. The Clausius–Mossotti factor compares the particle's polarizability to the surrounding medium's; a positive value pulls the particle toward high-field regions (positive DEP), a negative value pushes it away (negative DEP)."
+    },
+    {
+      "id": "q3",
+      "type": "blank",
+      "prompt": "Dielectrophoresis requires a ____ electric field, whereas electrophoresis works even in a uniform field.",
+      "answer": "non-uniform",
+      "accept": [
+        "non-uniform",
+        "nonuniform",
+        "spatially varying",
+        "inhomogeneous"
+      ],
+      "explain": "DEP arises from the gradient of E², so the two poles of the induced dipole feel unequal forces. In a perfectly uniform field the forces on the dipole cancel and there is no net DEP force. Electrophoresis instead acts on a real net charge, so a uniform field alone produces a steady drift."
+    },
+    {
+      "id": "q4",
+      "type": "calculation",
+      "prompt": "Using the Smoluchowski equation v = ε₀ε_r ζ E / η with ε_r = 78, ζ = −50 mV (i.e. −0.05 V), E = 1×10⁵ V/m, and η = 1×10⁻³ Pa·s, estimate |v| in m/s (order of magnitude, e.g. 3.5e-3).",
+      "answer": 3.45e-3,
+      "tolerance": 5e-4,
+      "unit": "m/s",
+      "explain": "v = 8.854e-12 × 78 × (−0.05) × 1e5 / 1e-3 ≈ −3.45e-3 m/s; magnitude ≈ 3.45×10⁻³ m/s."
+    }
+  ]
+}

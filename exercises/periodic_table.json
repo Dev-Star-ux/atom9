@@ -1,0 +1,40 @@
+{
+  "moduleId": "periodic_table",
+  "title": "Interactive Periodic Table — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Uranium’s atomic number Z is:",
+      "choices": [
+        "92",
+        "238",
+        "235",
+        "90"
+      ],
+      "answer": 0,
+      "explain": "Z = 92 protons. A = 238 or 235 labels isotopes."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "The most abundant natural uranium isotope is U-____.",
+      "answer": "238",
+      "accept": [
+        "238",
+        "U-238",
+        "U238"
+      ],
+      "explain": "≈99.3% of natural U is ²³⁸U."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "For ²³⁸U, neutron number N = A − Z. What is N?",
+      "answer": 146,
+      "tolerance": 0,
+      "unit": "",
+      "explain": "N = 238 − 92 = 146."
+    }
+  ]
+}

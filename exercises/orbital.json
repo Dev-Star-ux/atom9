@@ -1,0 +1,38 @@
+{
+  "moduleId": "orbital",
+  "title": "3D Orbital Explorer — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "A hydrogen orbital ψₙₗₘ is labeled by quantum numbers:",
+      "choices": [
+        "n, ℓ, m",
+        "only n",
+        "only spin",
+        "T, P, μ"
+      ],
+      "answer": 0,
+      "explain": "Principal, angular, magnetic."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Nodes (where ψ=0) total roughly n − ____.",
+      "answer": "1",
+      "accept": [
+        "1"
+      ],
+      "explain": "n − 1 nodes in the full wavefunction counting."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "For n=3, Eₙ = −13.6/n² eV. E₃ in eV ≈?",
+      "answer": -1.51,
+      "tolerance": 0.05,
+      "unit": "eV",
+      "explain": "−13.6/9 ≈ −1.51 eV."
+    }
+  ]
+}

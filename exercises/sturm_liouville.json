@@ -1,0 +1,40 @@
+{
+  "moduleId": "sturm_liouville",
+  "title": "Orthogonal Functions — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Legendre polynomials are orthogonal on:",
+      "choices": [
+        "[-1,1]",
+        "[0,∞)",
+        "only integers",
+        "complex plane"
+      ],
+      "answer": 0,
+      "explain": "Standard weight on [-1,1]."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Bessel functions J_n appear in ____ geometry problems.",
+      "answer": "cylindrical",
+      "accept": [
+        "cylindrical",
+        "circular",
+        "radial"
+      ],
+      "explain": "Cylindrical symmetry."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "P₀(x) is constant = 1. P₁(x)=x. At x=0, P₁ equals?",
+      "answer": 0,
+      "tolerance": 0,
+      "unit": "",
+      "explain": "P₁(0)=0."
+    }
+  ]
+}

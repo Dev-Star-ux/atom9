@@ -1,0 +1,41 @@
+{
+  "moduleId": "planck",
+  "title": "Planck's Law — Quantum Radiation — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Planck resolved the UV catastrophe by quantizing:",
+      "choices": [
+        "oscillator energy E = nhf",
+        "only electron charge",
+        "only gravity",
+        "temperature alone"
+      ],
+      "answer": 0,
+      "explain": "Energy comes in quanta hf."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "A single quantum of energy for frequency f is E = ____.",
+      "answer": "hf",
+      "accept": [
+        "hf",
+        "h f",
+        "hν",
+        "hν"
+      ],
+      "explain": "E = hf = hν."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If h = 6.63×10⁻³⁴ and f = 1.0×10¹⁴ Hz, E in joules (scientific, 2 sig)?",
+      "answer": 6.63e-20,
+      "tolerance": 5e-22,
+      "unit": "J",
+      "explain": "E = hf = 6.63×10⁻²⁰ J."
+    }
+  ]
+}

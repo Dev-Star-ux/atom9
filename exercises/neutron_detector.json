@@ -1,0 +1,57 @@
+{
+  "moduleId": "neutron_detector",
+  "title": "³He & BF₃ Proportional Counters — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "A ³He tube detects neutrons primarily via:",
+      "choices": [
+        "³He(n,p)³H charged products",
+        "direct neutron ionization only",
+        "photoelectric γ absorption",
+        "Cherenkov light from neutrons"
+      ],
+      "answer": 0,
+      "explain": "Neutrons are neutral; capture produces ionizing charged particles."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "BF₃ tubes use the capture reaction ¹⁰B(n,____)⁷Li.",
+      "answer": "α",
+      "accept": [
+        "α",
+        "alpha",
+        "a"
+      ],
+      "explain": "¹⁰B(n,α)⁷Li releases charged products detected in the gas."
+    },
+    {
+      "id": "q3",
+      "type": "selection",
+      "prompt": "Thermal neutrons vs fast neutrons in these gas counters:",
+      "choices": [
+        "thermal efficiency is much higher",
+        "fast is always higher",
+        "equal always",
+        "zero for both"
+      ],
+      "answer": 0,
+      "explain": "Capture cross-sections peak at thermal energies; moderators help fast beams."
+    },
+    {
+      "id": "q4",
+      "type": "selection",
+      "prompt": "“Wall effect” in a proportional counter refers to:",
+      "choices": [
+        "partial energy deposit when products hit the wall",
+        "HV cable heating",
+        "dead time only",
+        "moderator melting"
+      ],
+      "answer": 0,
+      "explain": "Charged products that strike the wall deposit less than Q → continuum below the peak."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "moduleId": "nmr_mri",
+  "title": "NMR / MRI — Bloch Simulator — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "After a 90° RF pulse, magnetisation lies mainly in the:",
+      "choices": [
+        "transverse plane (M⊥)",
+        "longitudinal direction only",
+        "zero field direction",
+        "RF coil axis only"
+      ],
+      "answer": 0,
+      "explain": "90° tips M from +z into the xy plane — FID is detected."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "Transverse magnetisation decays with time constant ____.",
+      "answer": "T2",
+      "accept": [
+        "T2",
+        "T₂",
+        "t2"
+      ],
+      "explain": "FID envelope ∝ exp(−t/T2)."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "Proton γ ≈ 42.58 MHz/T. At B₀ = 1.5 T, Larmor frequency in MHz is approximately?",
+      "answer": 63.87,
+      "tolerance": 0.5,
+      "unit": "MHz",
+      "explain": "f = γB₀ ≈ 42.58 × 1.5 ≈ 64 MHz."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Electrostatic Shielding — Learn</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: #1e293b;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+    .learn-doc { padding: 8px 6px 28px; max-width: 700px; }
+    h1 {
+      font-size: 1.4rem;
+      margin: 0 0 10px;
+      color: #0f172a;
+      font-weight: 750;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+    }
+    h2 {
+      font-size: 0.95rem;
+      margin: 22px 0 8px;
+      color: #0369a1;
+      font-weight: 700;
+    }
+    p { margin: 0 0 10px; color: #475569; }
+    .formula {
+      margin: 10px 0 14px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+      border: 1px solid #bae6fd;
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.98rem;
+      color: #0c4a6e;
+      white-space: pre-wrap;
+    }
+    .step {
+      padding: 12px 14px;
+      margin: 8px 0;
+      border-left: 3px solid #38bdf8;
+      background: #f8fafc;
+      border-radius: 0 12px 12px 0;
+      color: #334155;
+    }
+    .step strong { color: #0f172a; }
+    ul { margin: 6px 0 10px 18px; color: #475569; }
+    li { margin-bottom: 4px; }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #0369a1;
+      background: #e0f2fe;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <article class="learn-doc" data-module="electrostatic_shielding">
+    <div class="tag">Experiment guide</div>
+    <h1>Electrostatic Shielding (Faraday Cage)</h1>
+    <p>A hollow conductor placed in an external field E₀ develops induced surface charges that cancel the field inside its cavity — the field inside is zero regardless of how strong E₀ is. A mesh leaks a little; an insulator does not shield at all.</p>
+
+    <h2>1. Principle</h2>
+    <div class="step"><strong>Idea.</strong> Free charges in a conductor are mobile. When placed in an external field, they redistribute over the outer surface until the field they produce exactly cancels the external field everywhere inside the conductor and inside any cavity it encloses. In electrostatic equilibrium, the interior field is exactly zero — this is the Faraday cage effect. A conducting mesh (grid) approximates a solid shell but lets some field leak through gaps; the leakage grows as the hole size grows relative to the cage's characteristic size. An insulator has no free charges to redistribute, so it does not shield the interior at all — the external field passes through essentially undisturbed.</div>
+
+    <h2>2. Key formulas</h2>
+    <div class="formula">E_{inside} = 0 \; (\text{ideal conductor})</div>
+    <div class="formula">E_{inside} = E_0 / S(\text{material}, \text{hole size})</div>
+    <ul>
+      <li>S is the shielding factor: very large (≈∞) for a solid conductor, S = 1 for an insulator (no shielding), and grows toward the solid-conductor limit as a mesh's hole size shrinks.</li>
+      <li>Shielding effectiveness in decibels: SE = 20·log₁₀(E₀ / E_inside). Larger SE means better shielding.</li>
+      <li>Real-world examples: a car body shields occupants during a nearby lightning strike; MRI rooms use continuous conductive shielding to keep stray RF fields out; braided or foil shields around cables block external electric fields from coupling into the signal wire.</li>
+    </ul>
+
+    <h2>3. What to observe</h2>
+    <div class="step"><strong>In the sim.</strong> Field lines from the left approach the cage. With a solid conductor and the cage on, lines terminate on the left face (induced + / − charges appear) and the interior stays dark with a near-invisible probe arrow. With a mesh, some field leaks through in proportion to the hole size. With an insulator, or with the cage switched off, field lines pass straight through and the interior probe arrow equals the full external field.</div>
+
+    <h2>4. Step-by-step reasoning</h2>
+    <div class="step"><strong>Step A.</strong> Start from the physical picture: free charges in a conductor redistribute in an external field until electrostatic equilibrium is reached.</div>
+    <div class="step"><strong>Step B.</strong> Write the governing relation: <span class="formula" style="display:inline;padding:4px 8px;margin:0">E_{inside} = E_0 / S</span></div>
+    <div class="step"><strong>Step C.</strong> Change the material (conductor / mesh / insulator) and the mesh hole size one at a time, and predict whether the interior field will rise or fall before you look.</div>
+    <div class="step"><strong>Step D.</strong> Compute the shielding effectiveness in dB for your chosen setting and compare it against the ideal conductor limit.</div>
+
+    <h2>5. Check your understanding</h2>
+    <p>Open <strong>Exercises</strong> in the top bar for selection, fill-in, and calculation problems on this topic.</p>
+  </article>
+</body>
+</html>

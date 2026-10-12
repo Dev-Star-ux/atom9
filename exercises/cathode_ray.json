@@ -1,0 +1,40 @@
+{
+  "moduleId": "cathode_ray",
+  "title": "Cathode Ray Tube — Thomson — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "In Thomson’s CRT, when the electric and magnetic forces on the beam cancel, the beam speed equals:",
+      "choices": [
+        "E/B",
+        "B/E",
+        "e/m",
+        "√(2eV/m) only, never E/B"
+      ],
+      "answer": 0,
+      "explain": "Force balance: eE = evB ⇒ v = E/B."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "The charge-to-mass ratio of the electron is written ____.",
+      "answer": "e/m",
+      "accept": [
+        "e/m",
+        "e / m",
+        "q/m"
+      ],
+      "explain": "Thomson measured e/m ≈ 1.76×10¹¹ C/kg."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If E = 2.0×10⁴ N/C and B = 1.0×10⁻³ T at balance, what is v in m/s?",
+      "answer": 20000000,
+      "tolerance": 100000,
+      "unit": "m/s",
+      "explain": "v = E/B = 2×10⁴ / 10⁻³ = 2×10⁷ m/s."
+    }
+  ]
+}

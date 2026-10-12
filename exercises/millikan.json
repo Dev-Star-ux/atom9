@@ -1,0 +1,40 @@
+{
+  "moduleId": "millikan",
+  "title": "Millikan Oil Drop — the Elementary Charge — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "Millikan’s oil-drop experiment measured:",
+      "choices": [
+        "e (elementary charge)",
+        "e/m",
+        "Planck’s h",
+        "Avogadro’s number only"
+      ],
+      "answer": 0,
+      "explain": "Balancing gravity and electric force on charged drops yields e."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "At balance, qE = ____ (weight of the drop).",
+      "answer": "mg",
+      "accept": [
+        "mg",
+        "m g",
+        "weight"
+      ],
+      "explain": "Electric force upward equals gravitational force downward."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If q = 2e and e = 1.6×10⁻¹⁹ C, what is q in C?",
+      "answer": 3.2e-19,
+      "tolerance": 1e-21,
+      "unit": "C",
+      "explain": "q = 2 × 1.6×10⁻¹⁹ = 3.2×10⁻¹⁹ C."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "moduleId": "fourier_transform",
+  "title": "Fourier Transform Explorer — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "A narrow time pulse typically has:",
+      "choices": [
+        "broad frequency spectrum",
+        "single frequency only",
+        "zero bandwidth",
+        "no transform"
+      ],
+      "answer": 0,
+      "explain": "Δt·Δω uncertainty."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "F(ω)=∫ f(t) e^{-____ t} dt (sign convention).",
+      "answer": "iω",
+      "accept": [
+        "iω",
+        "i omega",
+        "iwt"
+      ],
+      "explain": "Standard physics convention e^{-iωt}."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "If σ doubles in Gaussian, bandwidth halves (roughly). σ→2σ gives width in ω about what factor?",
+      "answer": 0.5,
+      "tolerance": 0.1,
+      "unit": "×",
+      "explain": "Fourier width ∝ 1/σ."
+    }
+  ]
+}

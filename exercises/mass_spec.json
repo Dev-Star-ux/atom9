@@ -1,0 +1,40 @@
+{
+  "moduleId": "mass_spec",
+  "title": "Mass Spectrometer — Isotopes — Exercises",
+  "problems": [
+    {
+      "id": "q1",
+      "type": "selection",
+      "prompt": "In a magnetic mass spectrometer, radius of the ion path is proportional to:",
+      "choices": [
+        "m/q (at fixed v, B)",
+        "q/m only",
+        "temperature",
+        "only charge q"
+      ],
+      "answer": 0,
+      "explain": "r = mv/(qB) ⇒ r ∝ m/q for fixed v, B."
+    },
+    {
+      "id": "q2",
+      "type": "blank",
+      "prompt": "The Lorentz force magnitude on a charge q with speed v in field B (⊥) is F = ____.",
+      "answer": "qvB",
+      "accept": [
+        "qvB",
+        "q v B",
+        "evB"
+      ],
+      "explain": "F = qvB when v ⊥ B."
+    },
+    {
+      "id": "q3",
+      "type": "calculation",
+      "prompt": "For r = mv/(qB), if m doubles and q, v, B stay fixed, r becomes how many times larger?",
+      "answer": 2,
+      "tolerance": 0.01,
+      "unit": "×",
+      "explain": "r ∝ m ⇒ doubles."
+    }
+  ]
+}
